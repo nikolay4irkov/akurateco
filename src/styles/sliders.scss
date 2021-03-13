@@ -1,0 +1,37 @@
+.swiper-container--index-hero,
+.swiper-container--white-label-payment {
+  .swiper-slide {
+    opacity: 0 !important;
+
+    &.swiper-slide-active {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.swiper-container--index-3 {
+  .swiper-slide {
+    @apply h-auto;
+  }
+
+  a {
+    @apply h-full;
+  }
+}
+
+.swiper-container--about-services,
+.swiper-container--connectors-integration {
+  .swiper-slide {
+    @apply h-auto;
+  }
+}
+
+.swiper-container--related-news {
+  .swiper-wrapper {
+    @screen lg {
+      @apply grid-cols-1 gap-12;
+
+      display: grid !important;
+    }
+  }
+}

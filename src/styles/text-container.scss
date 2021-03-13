@@ -1,0 +1,33 @@
+.text-container {
+  p {
+    @apply text-lg font-medium my-8;
+  }
+
+  h1 {
+    @apply text-5xl font-bold my-14;
+  }
+
+  h2 {
+    @apply text-2xl font-bold my-12;
+  }
+
+  h3 {
+    @apply text-xl font-bold my-10;
+  }
+
+  img {
+    @apply object-cover w-full h-80 my-8;
+
+    @screen lg {
+      @apply h-96;
+    }
+  }
+
+  & > :first-child {
+    @apply mt-0;
+  }
+
+  & > :last-child {
+    @apply mb-0;
+  }
+}

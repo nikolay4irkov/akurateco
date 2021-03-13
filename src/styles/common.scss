@@ -1,0 +1,105 @@
+html {
+  @apply font-poppins text-dark;
+
+  letter-spacing: 0.2px;
+}
+
+body {
+  @apply overflow-x-hidden bg-whitish;
+
+  &.is-static {
+    // @apply overflow-hidden;
+  }
+}
+
+main {
+  @apply overflow-x-hidden mt-8;
+
+  @screen lg {
+    @apply mt-0;
+  }
+}
+
+button,
+a {
+  outline: none !important;
+}
+
+strong {
+  @apply font-bold;
+}
+
+.mix-multiply {
+  mix-blend-mode: multiply;
+}
+
+.translate-x-y-half {
+  transform: translate(-50%, -50%);
+}
+
+.section-lines {
+  @apply relative;
+
+  @screen xl {
+    &::before,
+    &::after {
+      @apply absolute h-full top-0 border-r border-l border-lightGreen -z-10;
+
+      content: "";
+      width: 45.8%;
+    }
+
+    &::before {
+      left: 15.6%;
+    }
+
+    &::after {
+      right: 15.6%;
+    }
+  }
+}
+
+.shadow-1 {
+  box-shadow: 0px 56px 54px -21px rgba(229, 229, 229, 0.5);
+}
+
+.box-shadow-red {
+  box-shadow: 0px 80px 80px rgba(248, 37, 48, 0.11),
+    0px 33.4221px 33.4221px rgba(248, 37, 48, 0.079074),
+    0px 17.869px 17.869px rgba(248, 37, 48, 0.0655718),
+    0px 10.0172px 10.0172px rgba(248, 37, 48, 0.055),
+    0px 5.32008px 5.32008px rgba(248, 37, 48, 0.0444282),
+    0px 2.21381px 2.21381px rgba(248, 37, 48, 0.030926);
+}
+
+.drop-shadow-red {
+  filter: drop-shadow(0px 80px 80px rgba(248, 37, 48, 0.11))
+    drop-shadow(0px 33.4221px 33.4221px rgba(248, 37, 48, 0.079074))
+    drop-shadow(0px 17.869px 17.869px rgba(248, 37, 48, 0.0655718))
+    drop-shadow(0px 10.0172px 10.0172px rgba(248, 37, 48, 0.055))
+    drop-shadow(0px 5.32008px 5.32008px rgba(248, 37, 48, 0.0444282))
+    drop-shadow(0px 2.21381px 2.21381px rgba(248, 37, 48, 0.030926));
+}
+
+.drop-shadow-grey-1 {
+  filter: drop-shadow(0px 154px 126px rgba(0, 0, 0, 0.07))
+    drop-shadow(0px 49.9794px 43.1694px rgba(0, 0, 0, 0.0453408))
+    drop-shadow(0px 23.2406px 18.791px rgba(0, 0, 0, 0.0325632))
+    drop-shadow(0px 11.5388px 8.14689px rgba(0, 0, 0, 0.0227847))
+    drop-shadow(0px 5.3376px 2.96572px rgba(0, 0, 0, 0.0145288))
+    drop-shadow(0px 1.87513px 0.629754px rgba(0, 0, 0, 0.0071287));
+}
+
+.drop-shadow-grey-2 {
+  filter: drop-shadow(0px 56px 54px rgba(229, 229, 229, 0.5));
+}
+
+.ml-container {
+  @screen lg {
+    margin-left: calc(50% - 512px);
+  }
+
+  @screen xl {
+    margin-left: calc(50% - 600px);
+  }
+}

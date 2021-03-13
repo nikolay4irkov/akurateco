@@ -1,0 +1,43 @@
+.nav-toggler {
+  @apply relative cursor-pointer z-10 outline-none;
+
+  width: 32px;
+  height: 18px;
+
+  @screen xxl {
+    @apply hidden;
+  }
+}
+
+.nav-toggler__line {
+  @apply bg-green w-full left-0 transition-all duration-300 absolute rounded;
+
+  height: 3px;
+
+  &:first-child {
+    top: 0;
+
+    .nav-toggler.is-active & {
+      transform: translateY(7.5px) rotate(45deg) translateX(0);
+    }
+  }
+
+  &:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 66%;
+
+    .nav-toggler.is-active & {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+  }
+
+  &:last-child {
+    bottom: 0;
+
+    .nav-toggler.is-active & {
+      transform: translateY(-7.5px) rotate(-45deg);
+    }
+  }
+}

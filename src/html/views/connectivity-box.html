@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <%= require('./../includes/header.html').default %>
+
+    <main>
+      <section
+        id="hero"
+        class="lg:h-screen section-lines lg:flex lg:items-center pb-20 lg:pb-0 pt-28 lg:pt-0"
+      >
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <img
+              src="/images/connectivity-box-hero-img.svg"
+              class="drop-shadow-red hidden lg:block lg:mr-24"
+            />
+            <div class="lg:w-6/12">
+              <h1
+                class="text-5xl lg:text-7xl font-black mb-8 lg:mb-12 capitalize"
+              >
+                cross-platform data sharing
+              </h1>
+
+              <p class="text-lg font-medium mb-4">
+                Easily export and import data across various platforms for
+                enhanced data management.
+              </p>
+              <p class="text-xl font-bold">
+                Enjoy full control over fast, smooth, and 100% secure data
+                sharing!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGrey py-22">
+        <div class="container">
+          <img
+            src="/images/connectivity-box-connections.png"
+            class="drop-shadow-grey-1"
+          />
+        </div>
+      </section>
+
+      <section class="section-lines pt-22 lg:pt-48">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+                Stay in control of your payment data
+              </h2>
+              <p class="text-lg font-medium mb-12">
+                Monitor and store all data inside a single consolidated system
+                to make data-driven business decisions and remain one step ahead
+                of your competition.
+              </p>
+              <a href="#" class="button button-red min-w-50">Button</a>
+            </div>
+
+            <img
+              src="/images/connectivity-box-charts.png"
+              class="object-cover w-full lg:w-48/100 drop-shadow-grey-2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines py-22 lg:py-48">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+                Enjoy fast connectivity with data aPI/sDK’s
+              </h2>
+              <img
+                src="/images/connectivity-box-api.svg"
+                class="lg:hidden object-cover w-72 mx-auto mb-4"
+              />
+
+              <p class="text-lg font-medium">
+                Benefit from fast and smooth connectivity of our open-source
+                developers’ environment to any payment app, market, payment
+                method, merchant, etc.
+              </p>
+            </div>
+
+            <img
+              src="/images/connectivity-box-api.svg"
+              class="hidden lg:block object-cover w-4/12 ml-22 pt-10"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22">
+        <div class="container">
+          <div class="text-center lg:w-8/12 mx-auto">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              enhance your data with the latest technology
+            </h2>
+            <p class="text-lg font-medium">
+              Enjoy Akurateco’s own data aggregation tools developed by our
+              in-house Data Scientists and Analysts to further improve the
+              quality and value of your data.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines py-22 lg:py-48">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+                always play it safe
+              </h2>
+              <p class="text-lg font-medium">
+                Akurateco’s connectivity box complies with the industry’s top
+                security standards to protect merchants, agents, and customers
+                from tech-savvy fraudsters.
+              </p>
+            </div>
+
+            <img
+              src="/images/connectivity-box-security.svg"
+              class="object-cover w-full lg:w-48/100"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22">
+        <div class="container">
+          <div class="text-center lg:w-8/12 mx-auto">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              Let’s talk cashier? Request a free demo today!
+            </h2>
+
+            <p class="text-lg font-medium mb-12">
+              Can’t find a system you need integration with on our list? Feel
+              free to request an integration — and have our team deliver it in
+              under a week!
+            </p>
+
+            <button
+              class="box-shadow-red button button-red min-w-50 mx-auto js-modal-call"
+              data-modal-target="modal-demo"
+            >
+              Request a Demo
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%= require('./../includes/modals.html').default %> <%=
+    require('./../includes/footer.html').default %> <%=
+    require('./../includes/defs.html').default %>
+  </body>
+</html>

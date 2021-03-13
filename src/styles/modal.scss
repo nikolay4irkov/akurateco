@@ -1,0 +1,48 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  width: calc(100% - 20px);
+
+  &.is-open {
+    opacity: 1 !important;
+    pointer-events: auto;
+  }
+
+  @media (max-height: 600px) {
+    max-height: 530px;
+    overflow-y: auto;
+  }
+}
+
+.modal-bg {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+
+  &.is-open {
+    opacity: 1 !important;
+    pointer-events: auto;
+  }
+}
+
+.modal--request {
+  @apply bg-white rounded-2xl p-6 pb-12  w-full;
+
+  @screen lg {
+    @apply p-16 max-w-3xl;
+  }
+}

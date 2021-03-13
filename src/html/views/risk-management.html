@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <%= require('./../includes/header.html').default %>
+
+    <main>
+      <section
+        id="hero"
+        class="lg:h-screen section-lines lg:flex lg:items-center pt-22 lg:pt-0"
+      >
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <img
+              src="/images/risk-management-hero-img.svg"
+              class="drop-shadow-red hidden lg:block lg:mr-24"
+            />
+
+            <div class="lg:w-6/12">
+              <h1
+                class="text-5xl lg:text-7xl font-black mb-8 lg:mb-12 capitalize"
+              >
+                Risk management
+              </h1>
+
+              <p class="text-xl font-bold mb-4">
+                Leveraging cutting-edge technology to protect your data
+              </p>
+
+              <p class="text-lg font-medium mb-4">
+                Akurateco’s advanced risk management system utilizes both
+                in-house and external scoring models to detect, analyze, and
+                prevent potentially fraudulent transactions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-12 lg:pt-22">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl font-bold capitalize mb-6">
+                In-house anti-fraud modules
+              </h2>
+              <p class="text-lg font-medium mb-6">
+                We’ve used our 15+ years of hands-on payment experience to build
+                up an advanced AI-enhanced fraud prevention system.
+              </p>
+              <p class="text-lg font-bold capitalize">The system includes:</p>
+
+              <div class="space-y-6 mt-12">
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Whitelists to mark trusted cardholders and avoid unwanted
+                    blocks and restrictions;
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Blacklists to flag and immediately block transactions based
+                    on specific parameters (BINs, IPs, email addresses, etc.);
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Modules serving as customizable filters for incoming
+                    transactions aiming to eliminate risks and decrease the
+                    number of flagged transactions on one’s account.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <img
+              src="/images/risk-management-antifraud.svg"
+              class="object-cover w-full lg:w-48/100 rounded-2xl shadow-1"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines py-22 lg:py-48">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+                External risk scoring providers
+              </h2>
+              <p class="text-lg font-medium">
+                Our risk management system uses third-party risk scoring
+                technology provided by the industry leaders like MaxMind,
+                Ethoca, and SiftScience to:
+              </p>
+
+              <div class="space-y-6 mt-12">
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Allow our customers to report fraud, assign high scores to
+                    specific cardholders, and warn the network about a potential
+                    scam in real-time;
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Easily track all the flagged transactions and double-check
+                    whether or not the system misread the cardholder’s behavior;
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Leverage AI for fraud and chargeback prevention;
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Resolve chargebacks before they hurt your reputation;
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Save a fortune in fees and fines for fraud and chargebacks.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <img
+              src="/images/risk-management-providers.png"
+              class="object-cover w-full lg:w-48/100 mix-multiply"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22">
+        <div class="container">
+          <div class="text-center lg:w-8/12 mx-auto">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              Ready for your free Demo of the system?
+            </h2>
+
+            <p class="text-lg font-medium mb-12">
+              Check out what our platform offers and how your business can
+              benefit from it now.
+            </p>
+
+            <button
+              class="box-shadow-red button button-red min-w-50 mx-auto js-modal-call"
+              data-modal-target="modal-demo"
+            >
+              Request a Demo
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGrey py-22 lg:py-0">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          >
+            <img
+              src="/images/risk-management-security.png"
+              class="object-cover w-full lg:w-48/100 lg:pt-35"
+            />
+
+            <div class="lg:w-2/5">
+              <h2 class="text-2xl font-bold capitalize mb-6">
+                We support 3D-Secure 2.0
+              </h2>
+              <p class="text-lg font-medium mb-6">
+                Frictionless and 100% mobile-friendly, 3D-Secure 2.0 has helped
+                the merchants transform the way their customers pay.
+              </p>
+              <p class="text-lg font-bold capitalize">It allows to:</p>
+
+              <div class="space-y-6 mt-12">
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Natively integrate 3D-Secure into custom mobile apps;
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Cater to users of non-browser platforms and mobile apps;
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Improve customer experience by leaps and bounds.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-22 lg:pt-48">
+        <div
+          class="ml-container flex flex-col lg:flex-row lg:justify-between lg:items-center"
+        >
+          <div class="lg:w-2/5 px-4 lg:px-0 mb-12 lg:mb-0">
+            <h2 class="text-2xl font-bold capitalize mb-6">
+              Customizable anti-fraud plans
+            </h2>
+            <p class="text-lg font-medium">
+              Our cutting-edge system allows the merchants to set up anti-fraud
+              plans on a single merchant, a merchant group, or a MID - to make
+              sure that each channel has sufficient protection against the
+              expected risk level.
+            </p>
+          </div>
+
+          <img
+            src="/images/risk-management-plans.svg"
+            class="object-cover w-full lg:w-48/100 drop-shadow-grey-1 ml-12 lg:ml-0"
+          />
+        </div>
+      </section>
+
+      <section class="section-lines py-22 lg:py-48">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl font-bold capitalize mb-4">
+                Akurateco’s fully PCI DSS compliant
+              </h2>
+              <p class="text-lg font-medium">
+                Full compatibility with PCI DSS security standards (version
+                3.2.1) is one of the measures we take as a secure white-label
+                payment platform provider to ensure the safety of the
+                cardholders’ data.
+              </p>
+            </div>
+
+            <img
+              src="/images/tokenization-pci.svg"
+              class="object-cover w-full lg:w-48/100 drop-shadow-grey-2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22">
+        <div class="container">
+          <div class="text-center lg:w-10/12 mx-auto">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              Looking for a secure white-label payment platform provider?
+            </h2>
+
+            <p class="text-lg font-medium mb-12">We’re here to help!</p>
+
+            <button
+              class="box-shadow-red button button-red min-w-50 mx-auto js-modal-call"
+              data-modal-target="modal-demo"
+            >
+              Request a Demo
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%= require('./../includes/modals.html').default %> <%=
+    require('./../includes/footer.html').default %> <%=
+    require('./../includes/defs.html').default %>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+import "./swiper";
+import "./accordion";
+import "./modal";
+import "./form";
+import "./scroll-top-btn";
+import "./smooth-scroll";
+// import "./animations";
+import "./header-visibility";
+import "./burger";
+import "./mob-submenu-toggler";

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <%= require('./../includes/header.html').default %>
+
+    <main>
+      <section
+        id="hero"
+        class="lg:h-screen section-lines lg:flex lg:items-center pb-20 lg:pb-0 pt-28 lg:pt-0"
+      >
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <img
+              src="/images/white-label-hero-img.svg"
+              class="drop-shadow-red hidden lg:block lg:mr-24"
+            />
+            <div class="lg:w-6/12">
+              <h1 class="text-5xl lg:text-7xl font-black mb-8 lg:mb-12">
+                White-label Payment Gateway
+              </h1>
+              <p class="text-lg font-medium">
+                Acurateco's gateway is a fully brandable, white label solution.
+                You can own the end-to-end ready-to-use, PCI DSS gateway without
+                unnecessary development costs or labor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGrey py-22">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold mb-4 capitalize">
+                enjoy 70+ connectors with one integration
+              </h2>
+              <p class="text-lg font-medium">
+                Enjoy access to a variety of ready-made connectors to banks and
+                payment methods and bring your existing ones for an
+                uninterrupted payment flow. Fast integrations and
+                customizations, banks, merchants, and APMs can be integrated
+                within a week!
+              </p>
+            </div>
+
+            <img src="/images/white-label-section-2.png" class="shadow-1" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-22 lg:pt-48">
+        <div class="container">
+          <div class="text-center lg:w-8/12 lg:mx-auto mb-12 lg:mb-22">
+            <h2 class="text-2xl lg:text-5xl font-bold mb-4 capitalize">
+              A fully brandable White label payment platform
+            </h2>
+            <p class="text-lg font-medium">
+              Akurateco brings you a technical solution to setup a payment
+              gateway with your company brand and color for seamless customer
+              journey regardless of the payment channel or country. Leverage
+              proven technology, infrastructure and expertise by reselling these
+              services as your own.
+            </p>
+          </div>
+
+          <!-- <div class="bg-white shadow-1 rounded-2xl h-112"></div> -->
+
+          <div
+            id="animation_container"
+            class="mx-auto"
+            style="
+              background-color: rgba(237, 238, 244, 1);
+              width: 1058px;
+              height: 456px;
+            "
+          >
+            <canvas
+              id="canvas"
+              width="1058"
+              height="456"
+              style="
+                position: absolute;
+                display: block;
+                background-color: rgba(237, 238, 244, 1);
+              "
+            ></canvas>
+            <div
+              id="dom_overlay_container"
+              style="
+                pointer-events: none;
+                overflow: hidden;
+                width: 1058px;
+                height: 456px;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                display: block;
+              "
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines py-22 lg:py-48">
+        <div class="container">
+          <div class="text-center lg:w-8/12 lg:mx-auto mb-12 lg:mb-22">
+            <h2 class="text-2xl font-bold mb-4 capitalize">
+              Smart invoicing and payment calendar
+            </h2>
+            <p class="text-lg font-medium">
+              <strong
+                >Tired of having to check 10 different places for your
+                settlements?</strong
+              >
+              With Bridger’s settlements calendar, it’s never been easier to
+              manage your settlements with a monthly snapshot of all your
+              ongoing settlements, as well as those in the pipeline, from all of
+              your payment providers and processors.
+            </p>
+          </div>
+
+          <div class="overflow-auto lg:over w-full shadow-1">
+            <img
+              src="/images/white-label-table.png"
+              class="white-label-table h-64 lg:h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22">
+        <div class="container">
+          <div class="text-center lg:w-8/12 mx-auto">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-12">
+              Request a Free Demo of The System Today!
+            </h2>
+
+            <button
+              class="box-shadow-red button button-red min-w-50 mx-auto js-modal-call"
+              data-modal-target="modal-demo"
+            >
+              Request a Demo
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-22 lg:pt-35">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-4/12 mb-20 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+                High quality support
+              </h2>
+              <p class="text-lg font-medium">
+                <strong
+                  >Akurateco guarantees highest quality of the service and
+                  technical support of the clients.</strong
+                >
+                Quality, availability, responsibilities are defined by the
+                Service Level Agreement. Interaction is carried out through the
+                Jira Service Desk. Detailed manuals are located in the Help
+                Center.
+              </p>
+            </div>
+
+            <img
+              src="/images/white-label-quality.svg"
+              class="drop-shadow-grey-1 mx-auto lg:mx-0 lg:w-auto lg:h-auto lg:mr-35"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines py-22 lg:py-48">
+        <div class="container">
+          <div class="text-center mx-auto lg:w-10/12 mb-12 lg:mb-22">
+            <h2 class="text-2xl lg:text-5xl font-bold mb-4">
+              Enjoy An Optimized Payment Solution
+            </h2>
+            <p class="text-lg font-medium">
+              Increase your transaction approval rate, prevent fraud, and be in
+              control of the payment flow with our cutting-edge solutions.
+            </p>
+          </div>
+
+          <div class="swiper-container--index-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a
+                  href="#"
+                  class="shadow-1 rounded-2xl bg-white flex flex-col items-center justify-center px-5 py-12 space-y-6"
+                >
+                  <img src="/images/billing.svg" alt="" />
+                  <p class="text-lg font-bold capitalize text-center">
+                    billing and smart invoicing
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="#"
+                  class="shadow-1 rounded-2xl bg-white flex flex-col items-center justify-center px-5 py-12 space-y-6"
+                >
+                  <img src="/images/admin-panel.svg" alt="" />
+                  <p class="text-lg font-bold capitalize text-center">
+                    back office. admin panel
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="#"
+                  class="shadow-1 rounded-2xl bg-white flex flex-col items-center justify-center px-5 py-12 space-y-6"
+                >
+                  <img src="/images/back-office.svg" alt="" />
+                  <p class="text-lg font-bold capitalize text-center">
+                    Bill faster <br />
+                    and save more
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="#"
+                  class="shadow-1 rounded-2xl bg-white flex flex-col items-center justify-center px-5 py-12 space-y-6"
+                >
+                  <img src="/images/risk-management.svg" alt="" />
+                  <p class="text-lg font-bold capitalize text-center">
+                    risk management
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="#"
+                  class="shadow-1 rounded-2xl bg-white flex flex-col items-center justify-center px-5 py-12 space-y-6"
+                >
+                  <img src="/images/tokenization.svg" alt="" />
+                  <p class="text-lg font-bold capitalize text-center">
+                    tokenization and recurring billing
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22 overflow-hidden">
+        <div class="container">
+          <div class="text-center mx-auto lg:w-10/12 mb-12 lg:mb-22">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              types of integration
+            </h2>
+            <p class="text-lg font-medium">
+              <strong>Integration has never been easier.</strong> Below are the
+              integration options you have with Akurateco.
+            </p>
+          </div>
+
+          <div class="swiper-container--white-label-integration">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/images/integration-1.png" class="shadow-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/integration-2.png" class="shadow-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/integration-3.png" class="shadow-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/integration-4.png" class="shadow-1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-22 lg:pt-35">
+        <div class="container">
+          <div class="text-center mx-auto lg:w-10/12 mb-12 lg:mb-22">
+            <h2 class="text-2xl font-bold capitalize mb-4">
+              A fully-customizable and fully-branded payment page
+            </h2>
+            <p class="text-lg font-medium">
+              Checkout creates a secure, Stripe-hosted payment page that lets
+              you collect payments quickly. It works across devices and is
+              designed to increase your conversion. Checkout makes it easy to
+              build a first-class payments experience:
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:justify-between lg:items-center"
+          >
+            <div
+              class="swiper-container--white-label-payment w-full lg:w-140 mb-22 lg:mb-0"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/images/white-label-payment-1.png"
+                    class="shadow-1 w-full object-cover"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/images/white-label-payment-2.png"
+                    class="shadow-1 w-full object-cover"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/images/white-label-payment-3.png"
+                    class="shadow-1 w-full object-cover"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/images/white-label-payment-4.png"
+                    class="shadow-1 w-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:w-2/5 space-y-6">
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <div>
+                  <p class="text-lg font-bold">Fraud and compliance.</p>
+                  <p class="text-lg font-medium">
+                    Simplified PCI compliance and SCA-ready
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <div>
+                  <p class="text-lg font-bold">Customization and branding.</p>
+                  <p class="text-lg font-medium">
+                    Customizable buttons and background color
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <div>
+                  <p class="text-lg font-bold">International.</p>
+                  <p class="text-lg font-medium">
+                    Supports over 25 languages and multiple payment methods
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <div>
+                  <p class="text-lg font-bold">Mobile-ready.</p>
+                  <p class="text-lg font-medium">
+                    Fully responsive design with Apple Pay and Google Pay
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <div>
+                  <p class="text-lg font-bold">Designed to remove friction.</p>
+                  <p class="text-lg font-medium">
+                    Real-time card validation with built-in error messaging
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-44 pb-22 lg:py-48">
+        <div class="container">
+          <div class="text-center mb-12">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              Reliable platform
+            </h2>
+            <p class="text-lg font-medium">
+              Technology is a key factor, when it comes to payments. How fast
+              you are, how stable you are, how flexible you are. With Payneteasy
+              technologies, you can be sure that you have a robust system for a
+              stable and profitable business.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row lg:justify-between lg:items-start"
+          >
+            <img src="/images/white-label-platform.svg" alt="" />
+
+            <div class="lg:w-2/5 space-y-5 lg:space-y-10">
+              <div>
+                <p class="accordion__title js-accordion-title">
+                  SAAS or Dedicated servers
+                </p>
+                <div class="accordion__text space-y-6 js-accordion-content">
+                  <p>
+                    Stable operation 24/7. Our processing centers are located on
+                    two platforms – in Amsterdam and Frankfurt – and are
+                    connected by a fail-safe channel. Even if there are problems
+                    accessing one of the platforms, your solution will continue
+                    working on the other platform with the same capacity.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="accordion__title js-accordion-title">
+                  Designed for high loads
+                </p>
+                <div class="accordion__text space-y-6 js-accordion-content">
+                  <p>
+                    Stable operation 24/7. Our processing centers are located on
+                    two platforms – in Amsterdam and Frankfurt – and are
+                    connected by a fail-safe channel. Even if there are problems
+                    accessing one of the platforms, your solution will continue
+                    working on the other platform with the same capacity.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="accordion__title js-accordion-title">
+                  Stable operation 24/7
+                </p>
+                <div class="accordion__text space-y-6 js-accordion-content">
+                  <p>
+                    Stable operation 24/7. Our processing centers are located on
+                    two platforms – in Amsterdam and Frankfurt – and are
+                    connected by a fail-safe channel. Even if there are problems
+                    accessing one of the platforms, your solution will continue
+                    working on the other platform with the same capacity.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="accordion__title js-accordion-title">
+                  Flexible architecture
+                </p>
+                <div class="accordion__text space-y-6 js-accordion-content">
+                  <p>
+                    Stable operation 24/7. Our processing centers are located on
+                    two platforms – in Amsterdam and Frankfurt – and are
+                    connected by a fail-safe channel. Even if there are problems
+                    accessing one of the platforms, your solution will continue
+                    working on the other platform with the same capacity.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="accordion__title js-accordion-title">
+                  Regular updates
+                </p>
+                <div class="accordion__text space-y-6 js-accordion-content">
+                  <p>
+                    Stable operation 24/7. Our processing centers are located on
+                    two platforms – in Amsterdam and Frankfurt – and are
+                    connected by a fail-safe channel. Even if there are problems
+                    accessing one of the platforms, your solution will continue
+                    working on the other platform with the same capacity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGrey py-22">
+        <div class="container relative">
+          <div class="text-center mx-auto w-10/12 mb-12 lg:mb-22">
+            <h2 class="text-2xl lg:text-5xl font-bold mb-2 capitalize">
+              cater to international customers across various industries
+            </h2>
+            <p class="text-lg font-medium lg:w-8/12 mx-auto">
+              Expand your global presence by offering advanced functionalities
+              tailored to the needs of a specific market.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+            <a
+              href="#"
+              class="bg-white rounded-lg shadow-1 p-6 flex flex-col min-h-64 mx-10 lg:mx-0"
+            >
+              <p class="font-bold text-lg mb-6">PSPs</p>
+              <p class="font-medium text-sm">
+                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
+                ullamco cillum dolor. Voluptate exercitation...
+              </p>
+              <p class="font-bold text-sm text-green mt-auto">See More</p>
+            </a>
+            <a
+              href="#"
+              class="bg-white rounded-lg shadow-1 p-6 flex flex-col min-h-64 mx-10 lg:mx-0"
+            >
+              <p class="font-bold text-lg mb-6">E-commerce/Low Risk</p>
+              <p class="font-medium text-sm">
+                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
+                ullamco cillum dolor. Voluptate exercitation...
+              </p>
+              <p class="font-bold text-sm text-green mt-auto">See More</p>
+            </a>
+            <a
+              href="#"
+              class="bg-white rounded-lg shadow-1 p-6 flex flex-col min-h-64 mx-10 lg:mx-0"
+            >
+              <p class="font-bold text-lg mb-6">High risk</p>
+              <p class="font-medium text-sm">
+                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
+                ullamco cillum dolor. Voluptate exercitation...
+              </p>
+              <p class="font-bold text-sm text-green mt-auto">See More</p>
+            </a>
+            <a
+              href="#"
+              class="bg-white rounded-lg shadow-1 p-6 flex flex-col min-h-64 mx-10 lg:mx-0"
+            >
+              <p class="font-bold text-lg mb-6">Fintech</p>
+              <p class="font-medium text-sm">
+                Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
+                ullamco cillum dolor. Voluptate exercitation...
+              </p>
+              <p class="font-bold text-sm text-green mt-auto">See More</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22">
+        <div class="container">
+          <div class="text-center lg:w-8/12 mx-auto">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-12">
+              Request a Free Demo of The System Today!
+            </h2>
+
+            <button
+              class="box-shadow-red button button-red min-w-50 mx-auto js-modal-call"
+              data-modal-target="modal-demo"
+            >
+              Request a Demo
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%= require('./../includes/modals.html').default %> <%=
+    require('./../includes/footer.html').default %> <%=
+    require('./../includes/defs.html').default %>
+  </body>
+</html>

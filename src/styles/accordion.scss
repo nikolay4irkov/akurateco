@@ -1,0 +1,48 @@
+.accordion__title {
+  @apply pl-16 relative text-lg font-bold cursor-pointer transition-colors duration-300 rounded-lg;
+
+  line-height: 32px;
+
+  @screen lg {
+    @apply text-xl;
+
+    line-height: 1.4;
+  }
+
+  &::before {
+    @apply top-1/2 left-0 transform -translate-y-1/2 absolute w-8 h-8 bg-green rounded-lg;
+
+    content: "";
+  }
+
+  &::after {
+    @apply top-1/2 absolute transform -translate-y-1/2 transition-transform duration-300;
+
+    left: 11px;
+    content: "";
+    background: url(../images/arr-down-white.svg) no-repeat center;
+    background-size: cover;
+    width: 12px;
+    height: 8px;
+  }
+
+  &.is-active {
+    @apply bg-green text-white;
+
+    &::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+}
+
+.accordion__text {
+  @apply p-4 bg-lightGreen mb-8 rounded-b-lg;
+
+  p {
+    @apply text-sm font-medium;
+  }
+
+  @screen lg {
+    @apply p-0 pl-16 mt-4 bg-transparent rounded-none;
+  }
+}

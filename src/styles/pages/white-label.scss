@@ -1,0 +1,7 @@
+.white-label-table {
+  min-width: 887px;
+
+  @screen lg {
+    @apply min-w-full;
+  }
+}

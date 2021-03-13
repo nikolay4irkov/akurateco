@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <%= require('./../includes/header.html').default %>
+
+    <main>
+      <section
+        id="hero"
+        class="lg:h-screen section-lines lg:flex lg:items-center pt-28 lg:pt-0"
+      >
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <img
+              src="/images/about-hero-img.svg"
+              class="drop-shadow-red hidden lg:block lg:mr-24"
+            />
+            <div class="lg:w-6/12">
+              <h1
+                class="text-5xl lg:text-7xl font-black mb-8 lg:mb-12 capitalize"
+              >
+                About us
+              </h1>
+
+              <p class="text-lg font-medium mb-4">
+                Akurateco, a cutting-edge white-label payment software provider
+                with 15+ years of hands-on experience in the payment industry,
+                is here to bring fully-brandable and easily customizable payment
+                software to merchants like you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-12 pb-22 lg:pt-22 lg:pb-48">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:justify-between lg:items-center"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+                Keep All data In One Place
+              </h2>
+              <p class="text-lg font-medium">
+                Consolidated and easy-to-manipulate data management to keep you
+                in full control over data from various payment channels.
+              </p>
+              <a href="#" class="button button-red min-w-50 mt-12"
+                >Bill Faster</a
+              >
+            </div>
+
+            <img
+              src="/images/cashier-charts.png"
+              class="w-full lg:w-48/100 drop-shadow-grey-2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22">
+        <div class="container">
+          <div class="lg:w-7/12 mx-auto text-center mb-12 lg:mb-20">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              Our Services
+            </h2>
+            <p class="text-lg font-medium">
+              We’ve developed a range of powerful payment tools and services to
+              consolidate your transaction data and enhance your business flow:
+            </p>
+          </div>
+
+          <div class="swiper-container--about-services">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-services shadow-1">
+                  <img src="/images/white-label.svg" />
+                  <p class="text-lg font-bold capitalize">
+                    A white-label payment platform
+                  </p>
+                  <p class="text-sm font-medium">
+                    A fully-brandable payment solution allowing you to own the
+                    end-to-end PCI DSS-certified gateway with zero development
+                    cost
+                  </p>
+                  <a href="#" class="text-sm font-bold text-green capitalize"
+                    >See More</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-services">
+                  <img src="/images/cashier.svg" />
+                  <p class="text-lg font-bold capitalize">Cashier</p>
+                  <p class="text-sm font-medium">
+                    NEasily customizable white-label payment software that
+                    offers instant access to hundreds of connectors to banks and
+                    payment methods with a single integration.
+                  </p>
+                  <a href="#" class="text-sm font-bold text-green capitalize"
+                    >See More</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-services">
+                  <img src="/images/cross-platform.svg" />
+                  <p class="text-lg font-bold capitalize">
+                    Cross-platform data sharing
+                  </p>
+                  <p class="text-sm font-medium">
+                    Leverage easy import and export of data across different
+                    platforms and enjoy simplified integration with any system!
+                  </p>
+                  <a href="#" class="text-sm font-bold text-green capitalize"
+                    >See More</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-services">
+                  <img src="/images/mobile-sdk.svg" />
+                  <p class="text-lg font-bold capitalize">Mobile SDK</p>
+                  <p class="text-sm font-medium">
+                    Integrate one-click payments into any mobile app with our
+                    read-made modules.
+                  </p>
+                  <a href="#" class="text-sm font-bold text-green capitalize"
+                    >See More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGrey py-22">
+        <div class="container">
+          <div class="lg:w-7/12 mx-auto text-center mb-12 lg:mb-15">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              Our technology
+            </h2>
+            <p class="text-lg font-medium">
+              Akurateco can easily integrate new connectors within the shortest
+              time. Here’s how the flow works step by step:
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-white rounded-2xl shadow-1 p-10 lg:p-16">
+              <p class="text-xl font-bold text-green mb-8">Infrastructure</p>
+              <div class="text-sm space-y-2">
+                <p>NGINX</p>
+                <p>Kubernetes Cluster</p>
+                <p>
+                  DB Cluster Percona / Percona replication Manager / ProxySQL
+                </p>
+                <p>Elasticsearch Cluster / HAProxy</p>
+                <p>RabbitMQ Cluster</p>
+                <p>GlusterFS</p>
+                <p>PMM / Prometeus / Wazuh!</p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-1 p-10 lg:p-16">
+              <p class="text-xl font-bold text-green mb-8">Software</p>
+              <div class="text-sm space-y-2">
+                <p>PHP 7.4</p>
+                <p>Symfony 4.4</p>
+                <p>Mercure</p>
+                <p>Redis / RabbitMQ</p>
+                <p>Bootstrap template / VuejsBootrstrap / VueJS / TypeScript</p>
+                <p>Behat / Postman / PHPUni</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines py-22 lg:py-48">
+        <div class="container">
+          <h2
+            class="text-2xl lg:text-5xl font-bold capitalize text-center mb-12 lg:mb-20"
+          >
+            How we roll, or how to get started:
+          </h2>
+
+          <div class="swiper-container--connectors-integration">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-integration card-integration--about">
+                  <p class="text-xl lg:text-xl font-bold mb-2 lg:mb-5">
+                    Get a Demo of the system
+                  </p>
+                  <p class="text-xs lg:text-lg font-medium relative z-10">
+                    We’ll introduce you to the system and answer all of your
+                    business-specific questions before the launch.
+                  </p>
+                  <p class="card-integration__number leading-none">.1</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-integration card-integration--about">
+                  <p class="text-xl lg:text-xl font-bold mb-2 lg:mb-5">
+                    Set up the system
+                  </p>
+                  <p class="text-xs lg:text-lg font-medium relative z-10">
+                    System integration and customization take between 1 and 3
+                    weeks depending on the availability of all the requested
+                    solutions.
+                  </p>
+                  <p class="card-integration__number leading-none">.2</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-integration card-integration--about">
+                  <p class="text-xl lg:text-xl font-bold mb-2 lg:mb-5">
+                    Go Live
+                  </p>
+                  <p class="text-xs lg:text-lg font-medium relative z-10">
+                    Your journey begins. Our expert team will stay in touch
+                    every step of the way from this time on.
+                  </p>
+                  <p class="card-integration__number leading-none">.3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22">
+        <div class="container">
+          <div class="text-center lg:w-8/12 mx-auto">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              Ready for your free Demo of the system?
+            </h2>
+
+            <p class="text-lg font-medium mb-12">
+              Check out what our platform offers and how your business can
+              benefit from it now.
+            </p>
+
+            <button
+              class="box-shadow-red button button-red min-w-50 mx-auto js-modal-call"
+              data-modal-target="modal-demo"
+            >
+              Request a Demo
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines py-22">
+        <div class="container">
+          <div class="text-center lg:w-10/12 mx-auto">
+            <h2 class="text-2xl font-bold capitalize mb-12">
+              Have a question? We probably have an answer to it here
+            </h2>
+
+            <a
+              href=""
+              class="box-shadow-red button button-red min-w-50 mx-auto"
+            >
+              FAQ
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <img
+      id="plane-up"
+      src="/images/akurateco-logo-small.svg"
+      class="hidden lg:block absolute left-0 transform -translate-x-1/2 w-80 h-60 mr-4"
+    /> -->
+
+    <%= require('./../includes/modals.html').default %> <%=
+    require('./../includes/footer.html').default %> <%=
+    require('./../includes/defs.html').default %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js"></script>
+  </body>
+</html>

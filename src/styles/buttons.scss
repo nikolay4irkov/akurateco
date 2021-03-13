@@ -1,0 +1,35 @@
+.button {
+  @apply flex items-center justify-center w-max-content text-sm font-bold px-4 rounded-lg  h-12;
+}
+
+.button-red {
+  @apply bg-red  text-white;
+
+  .header-desk & {
+    @apply px-6;
+  }
+}
+
+.button-green {
+  @apply bg-green text-white;
+}
+
+.button-back {
+  @apply flex items-center justify-center border border-green text-green h-10 rounded-lg mt-12 relative;
+
+  @screen lg {
+    @apply min-w-40 w-max-content;
+  }
+
+  svg {
+    @apply fill-current text-green w-8 h-4 absolute top-1/2 left-0 ml-20  transform -translate-y-1/2;
+
+    @screen lg {
+      @apply ml-2;
+    }
+  }
+
+  p {
+    @apply text-sm font-bold text-green;
+  }
+}

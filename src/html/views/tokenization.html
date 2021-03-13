@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <%= require('./../includes/header.html').default %>
+
+    <main>
+      <section
+        id="hero"
+        class="lg:h-screen section-lines lg:flex lg:items-center pt-28 lg:pt-0"
+      >
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <img
+              src="/images/tokenization-hero-img.svg"
+              class="drop-shadow-red hidden lg:block lg:mr-24"
+            />
+            <div class="lg:w-6/12">
+              <h1
+                class="text-5xl lg:text-7xl font-black mb-8 lg:mb-12 capitalize"
+              >
+                simplified yet secure payment experience
+              </h1>
+
+              <p class="text-lg font-medium mb-4">
+                Allow your customers to simplify the payment experience by
+                storing their card data in our end-to-end encrypted system
+                without compromising their online security.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-12 lg:pt-22">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+                enjoy one-click payments
+              </h2>
+              <p class="text-lg font-medium">
+                Let your customers implement one-click payments on their sites
+                to capture more revenue and skyrocket sales volumes.
+              </p>
+            </div>
+
+            <img
+              src="/images/tokenization-payments-mob.png"
+              class="lg:hidden object-cover w-full rounded-2xl shadow-1"
+            />
+
+            <img
+              src="/images/tokenization-payments.png"
+              class="hidden lg:block object-cover w-48/100 rounded-2xl shadow-1"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines py-22 lg:py-48">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+                implement smart recurring billing
+              </h2>
+              <p class="text-lg font-medium">
+                Take advantage of tokenization for state-of-the-art recurring
+                billing with multiple retries and a flexible payment schedule.
+              </p>
+            </div>
+
+            <img
+              src="/images/tokenization-calendar.svg"
+              class="object-cover w-full lg:w-2/5 rounded-xl shadow-1"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGrey py-22 lg:py-28">
+        <div class="container">
+          <div class="text-center lg:w-10/12 mx-auto">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              easily customize recurring billing fees
+            </h2>
+            <p class="text-lg font-medium">
+              Enjoy fully customizable recurring billing with our
+              top-of-the-industry fee constructor and let your customers benefit
+              from the maximum flexibility it offers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-22 lg:pt-48">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl font-bold capitalize mb-4">
+                roll in mobile wallets and cryptocurrency
+              </h2>
+              <p class="text-lg font-medium">
+                Leverage tokenization for propelling technologies like mobile
+                wallets and cryptocurrency allowing your clients to pay the way
+                they’re used to.
+              </p>
+            </div>
+
+            <img
+              src="/images/tokenization-phones.png"
+              class="object-cover w-11/12 mx-auto lg:mx-0 lg:w-2/6 lg:mr-18 drop-shadow-grey-2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines py-22 lg:py-48">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+                utilize pCI dSS compatible tokenization
+              </h2>
+              <p class="text-lg font-medium">
+                With Akurateco, you get tokenization fully compatible with PCI
+                DSS security standards, ensuring that your customers’ data is
+                safely locked down.
+              </p>
+            </div>
+
+            <img
+              src="/images/tokenization-pci.svg"
+              class="object-cover w-full lg:w-48/100 drop-shadow-grey-2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22">
+        <div class="container">
+          <div class="text-center lg:w-8/12 mx-auto">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              how about we make it official?
+            </h2>
+
+            <p class="text-lg font-medium mb-12">
+              Let’s schedule a call to get you started with our
+              fully-customizable payment system?
+            </p>
+
+            <button
+              class="box-shadow-red button button-red min-w-50 mx-auto js-modal-call"
+              data-modal-target="modal-demo"
+            >
+              Request a Demo
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%= require('./../includes/modals.html').default %> <%=
+    require('./../includes/footer.html').default %> <%=
+    require('./../includes/defs.html').default %>
+  </body>
+</html>

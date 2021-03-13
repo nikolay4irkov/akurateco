@@ -1,0 +1,43 @@
+.card-blog {
+  @apply bg-white shadow-1 rounded-2xl p-8 flex flex-col;
+
+  @screen lg {
+    @apply p-14;
+  }
+}
+
+.card-blog--modified {
+  @apply p-6;
+
+  @screen lg {
+    @apply p-6;
+  }
+
+  .card-blog__text {
+    @apply hidden;
+
+    @screen lg {
+      display: -webkit-box;
+    }
+  }
+}
+
+.card-blog__img {
+  @apply w-full h-full object-cover;
+
+  @screen lg {
+    @apply transform transition-transform duration-300;
+  }
+}
+
+.card-blog__text {
+  @apply text-sm font-medium mb-3 overflow-hidden;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+
+  @screen lg {
+    -webkit-line-clamp: 2;
+  }
+}
