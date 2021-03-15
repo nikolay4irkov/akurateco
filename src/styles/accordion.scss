@@ -46,3 +46,13 @@
     @apply p-0 pl-16 mt-4 bg-transparent rounded-none;
   }
 }
+
+.faq {
+  .accordion__title.is-active {
+    @apply text-dark bg-transparent;
+  }
+
+  .accordion__text {
+    @apply my-8;
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <%= require('./../includes/header.html').default %>
+
+    <main>
+      <section
+        id="hero"
+        class="lg:h-screen section-lines lg:flex lg:items-center pt-22 lg:pt-0"
+      >
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
+          >
+            <img
+              src="/images/bill-faster-hero-img.svg"
+              class="drop-shadow-red hidden lg:block lg:mr-24"
+            />
+
+            <div class="lg:w-6/12">
+              <h1
+                class="text-5xl lg:text-7xl font-black mb-8 lg:mb-12 capitalize"
+              >
+                Bill faster and save more
+              </h1>
+
+              <p class="text-xl font-bold">
+                Capture more revenue with our <br />
+                top-of-the-industry technologies allowing to set customizable
+                fees for each individual payment action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-12 lg:pt-22">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5">
+              <h2
+                class="text-2xl lg:text-5xl font-bold capitalize mb-4 lg:mb-6"
+              >
+                Charge more with our sophisticated fee constructor
+              </h2>
+              <p class="text-lg font-bold">
+                Use our state-of-the-art fee constructor to easily set up fees,
+                customize payment actions, and enjoy smooth and fully automated
+                payment flow:
+              </p>
+
+              <img
+                src="/images/bill-faster-constructor.svg"
+                class="lg:hidden object-cover w-9/12 mx-auto mt-10"
+              />
+
+              <div class="space-y-6 mt-12 lg:mt-7">
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Set up two different fee types - transaction-related and
+                    recurring. Enjoy full customization of fees based on the
+                    transaction amount, currency, acquiring bank, transaction
+                    type, etc.;
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Charge different fees for successful and failed transactions
+                    + rolling reserve;
+                  </p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <img src="/images/arr-right-red.svg" />
+                  <p class="text-lg font-medium">
+                    Customize the frequency as well as the beginning and end of
+                    the recurring payment schedule based on the existence or
+                    absence of transactions of certain types or in certain
+                    statuses (successful or failed).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <img
+              src="/images/bill-faster-constructor.svg"
+              class="hidden lg:block object-cover w-full lg:w-1/3 lg:mr-20"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%= require('./../includes/modals.html').default %> <%=
+    require('./../includes/footer.html').default %> <%=
+    require('./../includes/defs.html').default %>
+  </body>
+</html>
