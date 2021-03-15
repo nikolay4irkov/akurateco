@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <%= require('./../includes/header.html').default %>
+
+    <main>
+      <section
+        id="hero"
+        class="lg:h-screen section-lines lg:flex lg:items-center pb-20 lg:pb-0 pt-28 lg:pt-0"
+      >
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          >
+            <div class="lg:w-2/5">
+              <h1 class="text-5xl lg:text-7xl font-black mb-8 lg:mb-12">
+                Akurateco Cashier
+              </h1>
+              <p class="text-2xl font-bold capitalize mb-4">
+                One integration = multiple payment connectors
+              </p>
+              <p class="text-lg font-medium">
+                Enjoy our cutting-edge SaaS payment platform with 100+
+                connectors to banks and payment methods available via a single
+                integration.
+              </p>
+            </div>
+
+            <div class="lg:w-2/5 mt-12 lg:mt-0">
+              <div id="modal-demo" class="modal--request shadow-1">
+                <div class="flex items-center lg:justify-center mt-6 lg:mt-0">
+                  <img
+                    src="/images/akurateco-logo-small.svg"
+                    class="lg:w-15 mr-4"
+                  />
+                  <p class="text-xl lg:text-2xl font-bold">Request a Demo</p>
+                </div>
+
+                <form
+                  action=""
+                  class="js-form"
+                  data-success-modal="modal-thanks"
+                >
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-y-2 lg:gap-y-4 lg:gap-x-10 mt-6 lg:mt-15"
+                  >
+                    <div class="form__item">
+                      <label
+                        for="name-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Name*</label
+                      >
+                      <input
+                        id="name-demo"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="phone-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Phone*</label
+                      >
+                      <input
+                        id="phone-demo"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="email-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Email*</label
+                      >
+                      <input
+                        id="email-demo"
+                        type="email"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="company-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Company*</label
+                      >
+                      <input
+                        id="company-demo"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="website-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Website*</label
+                      >
+                      <input
+                        id="website-demo"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="geo-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Geo of customers*</label
+                      >
+                      <input
+                        id="geo-demo"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item lg:col-span-2">
+                      <label
+                        for="connectors-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Connectors needed</label
+                      >
+                      <input
+                        id="connectors-demo"
+                        type="text"
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="button button-red min-w-50 mx-auto mt-6 lg:mt-15"
+                  >
+                    Request a Demo
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGrey py-22">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
+          >
+            <img
+              src="/images/cashier-routing.png"
+              class="drop-shadow-grey-1 lg:w-1/2 mb-12 lg:mb-0"
+            />
+
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold mb-4 capitalize">
+                Approve more transactions
+              </h2>
+              <div class="text-lg font-medium space-y-4">
+                <p>
+                  Experience the power of smart routing allowing you to approve
+                  up to 20% more transactions and improve your clients’
+                  experience.
+                </p>
+                <p>
+                  Leverage our cascading functionality to grow your conversion
+                  ratio by up to 30% by distributing declined transactions
+                  between multiple channels.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-22 lg:pt-48">
+        <div class="container">
+          <div class="text-center lg:w-9/12 lg:mx-auto mb-12 lg:mb-22">
+            <h2 class="text-2xl font-bold mb-4 capitalize">
+              keep track of all fees and commissions
+            </h2>
+            <p class="text-lg font-medium">
+              No more struggles with multiple fees coming your way from an
+              extensive list of payment channels. Utilize our cutting-edge
+              payment calendar to always stay on top of things!
+            </p>
+          </div>
+
+          <lottie-player
+            class="mx-auto"
+            src="https://assets8.lottiefiles.com/private_files/lf30_dssd6aty.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+
+          <a href="" class="button button-red min-w-50 mx-auto mt-12">
+            Bill Faster
+          </a>
+        </div>
+      </section>
+
+      <section class="section-lines py-22 lg:py-48">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:justify-between lg:items-center"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+                Keep All data In One Place
+              </h2>
+              <p class="text-lg font-medium">
+                Consolidated and easy-to-manipulate data management to keep you
+                in full control over data from various payment channels.
+              </p>
+            </div>
+
+            <img
+              src="/images/cashier-charts.png"
+              class="w-full lg:w-48/100 drop-shadow-grey-2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22">
+        <div class="container">
+          <div class="text-center lg:w-8/12 mx-auto">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-12">
+              Let’s talk cashier? Request a free demo today!
+            </h2>
+
+            <button
+              class="box-shadow-red button button-red min-w-50 mx-auto js-modal-call"
+              data-modal-target="modal-demo"
+            >
+              Request a Demo
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-22 lg:pt-35 overflow-hidden">
+        <div class="container">
+          <div class="text-center mx-auto lg:w-10/12 mb-12 lg:mb-22">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              types of integration
+            </h2>
+            <p class="text-lg font-medium">
+              <strong>Integration has never been easier.</strong> Below are the
+              integration options you have with Akurateco.
+            </p>
+          </div>
+
+          <div class="swiper-container--white-label-integration">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/images/integration-1.png" class="shadow-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/integration-2.png" class="shadow-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/integration-3.png" class="shadow-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/integration-4.png" class="shadow-1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines pt-35 lg:pt-48">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:justify-between lg:items-center"
+          >
+            <div class="lg:w-2/5 mb-12 lg:mb-0">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+                Akurateco cashier offers
+              </h2>
+              <p class="text-lg font-medium">
+                No more struggles with multiple fees coming your way from an
+                extensive list of payment channels. Utilize our cutting-edge
+                payment calendar to always stay on top of things!
+              </p>
+            </div>
+
+            <div class="lg:w-5/12 space-y-6 lg:mr-16">
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <p class="text-lg font-medium">SLA 99,995%</p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <p class="text-lg font-medium">
+                  Cloud deployment on own hardware or Amazon AWS
+                </p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <p class="text-lg font-medium">
+                  PCI DSS 3.2 certification of the equipment, solutions, and
+                  processes
+                </p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <p class="text-lg font-medium">
+                  24/7 maintenance of both software and hardware
+                </p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <p class="text-lg font-medium">
+                  SMS and DMS payment schemes support
+                </p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <p class="text-lg font-medium">3DS 2.0 support</p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <img src="/images/arr-right-red.svg" />
+                <p class="text-lg font-medium">Dynamic currency conversion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-lines py-22 lg:pt-48 lg:pb-35">
+        <div class="container">
+          <h2
+            class="text-2xl lg:text-5xl font-bold capitalize text-center mb-4"
+          >
+            Cost-effective Time transaction flow
+          </h2>
+          <p class="hidden lg:block text-lg font-medium text-center">
+            Akurateco Cashier will allow the key employees in your company to
+            maximize their performance. Be completely in-the-know regarding
+            efficiency and overall cost of each payment provider. Make educated
+            and cost-effective decisions for your traffic distribution.
+          </p>
+
+          <div
+            class="flex flex-col lg:flex-row lg:items-start lg:justify-between lg:mt-22"
+          >
+            <img src="/images/cashier-graph.svg" class="lg:w-48/100" />
+            <p class="lg:hidden text-lg font-medium text-center my-12">
+              Akurateco Cashier will allow the key employees in your company to
+              maximize their performance. Be completely in-the-know regarding
+              efficiency and overall cost of each payment provider. Make
+              educated and cost-effective decisions for your traffic
+              distribution.
+            </p>
+
+            <div class="lg:w-2/5 space-y-5 lg:space-y-10">
+              <div>
+                <p class="accordion__title is-active js-accordion-title">
+                  Chief Financial Officer
+                </p>
+                <div class="accordion__text space-y-6 js-accordion-content">
+                  <p>
+                    Stable operation 24/7. Our processing centers are located on
+                    two platforms – in Amsterdam and Frankfurt – and are
+                    connected by a fail-safe channel. Even if there are problems
+                    accessing one of the platforms, your solution will continue
+                    working on the other platform with the same capacity.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="accordion__title js-accordion-title">
+                  Payment Manager
+                </p>
+                <div class="accordion__text space-y-6 js-accordion-content">
+                  <p>
+                    Stable operation 24/7. Our processing centers are located on
+                    two platforms – in Amsterdam and Frankfurt – and are
+                    connected by a fail-safe channel. Even if there are problems
+                    accessing one of the platforms, your solution will continue
+                    working on the other platform with the same capacity.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="accordion__title js-accordion-title">
+                  Support Manager
+                </p>
+                <div class="accordion__text space-y-6 js-accordion-content">
+                  <p>
+                    Stable operation 24/7. Our processing centers are located on
+                    two platforms – in Amsterdam and Frankfurt – and are
+                    connected by a fail-safe channel. Even if there are problems
+                    accessing one of the platforms, your solution will continue
+                    working on the other platform with the same capacity.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="accordion__title js-accordion-title">Risk Officer</p>
+                <div class="accordion__text space-y-6 js-accordion-content">
+                  <p>
+                    Stable operation 24/7. Our processing centers are located on
+                    two platforms – in Amsterdam and Frankfurt – and are
+                    connected by a fail-safe channel. Even if there are problems
+                    accessing one of the platforms, your solution will continue
+                    working on the other platform with the same capacity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-lightGreen py-22">
+        <div class="container">
+          <div class="text-center lg:w-8/12 mx-auto">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-12">
+              Request a Free Demo of The System Today!
+            </h2>
+
+            <button
+              class="box-shadow-red button button-red min-w-50 mx-auto js-modal-call"
+              data-modal-target="modal-demo"
+            >
+              Request a Demo
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <%= require('./../includes/modals.html').default %> <%=
+    require('./../includes/footer.html').default %> <%=
+    require('./../includes/defs.html').default %>
+  </body>
+</html>
