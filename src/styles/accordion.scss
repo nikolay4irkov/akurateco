@@ -45,6 +45,10 @@
   @screen lg {
     @apply p-0 pl-16 mt-4 bg-transparent rounded-none;
   }
+
+  // &.is-active {
+  //   display: block !important;
+  // }
 }
 
 .faq {

@@ -5,6 +5,6 @@ import "./form";
 import "./scroll-top-btn";
 import "./smooth-scroll";
 // import "./animations";
-import "./header-visibility";
+// import "./header-visibility";
 import "./burger";
 import "./mob-submenu-toggler";
