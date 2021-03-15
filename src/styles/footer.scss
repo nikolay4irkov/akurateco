@@ -5,3 +5,17 @@
 .footer-title {
   @apply text-base font-medium uppercase text-white tracking-widest;
 }
+
+.cta-block {
+  @apply z-30 grid grid-cols-2 fixed bottom-0 w-full p-4 gap-6 bg-lightGreen;
+
+  .button {
+    @apply w-auto tracking-wider;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  @screen lg {
+    @apply hidden;
+  }
+}
