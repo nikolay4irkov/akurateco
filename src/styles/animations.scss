@@ -1,0 +1,74 @@
+.circle-chart {
+  @apply relative grid place-items-center flex-shrink-0 w-24 h-24 opacity-0;
+
+  &.is-active {
+    @apply opacity-100;
+  }
+
+  @screen lg {
+    @apply w-28 h-28;
+  }
+}
+
+.circle-outer, .circle-inner {
+  transition: stroke-dashoffset 2s linear;
+
+  .is-active &  {
+    stroke-dashoffset: 0;
+  }
+}
+
+.circle-outer {
+  @apply transform -rotate-90 w-full h-full rounded-full;
+
+  stroke-dashoffset: 97;
+}
+
+.circle-inner {
+    @apply absolute top-1/2 left-1/2 rounded-full;
+
+    transform: translate(-50%,-50%) rotate(-90deg);
+    stroke-dashoffset: 87;
+    width: 85%;
+    height: 85%;
+}
+
+.lines-chart {
+  @apply opacity-0 flex-shrink-0 h-full flex items-end justify-between w-12;
+
+  &.is-active {
+    @apply opacity-100;
+  }
+}
+
+.line {
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 2s linear;
+
+  .is-active &  {
+    transform: scaleY(1);
+  }
+
+  @screen lg {
+    @apply ;
+  }
+}
+
+.line--red {
+  @apply ;
+
+  height: 70%;
+
+  @screen lg {
+    @apply ;
+  }
+}
+
+.line--green {
+  @apply h-full;
+
+  @screen lg {
+    @apply ;
+  }
+}

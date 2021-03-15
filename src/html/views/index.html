@@ -41,15 +41,43 @@
                     <div class="flex items-center space-x-6 lg:space-x-8">
                       <div class="text-red">
                         <p class="text-xs">before</p>
-                        <p class="text-xl lg:text-2xl font-bold">94%</p>
+                        <p class="text-xl lg:text-2xl font-bold">
+                          <span id="number-1">94</span>%
+                        </p>
                       </div>
                       <div class="text-green">
                         <p class="text-xs">after</p>
-                        <p class="text-xl lg:text-2xl font-bold">97%</p>
+                        <p class="text-xl lg:text-2xl font-bold">
+                          <span id="number-2">97</span>%
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <img src="/images/index-circle-chart.svg" alt="" />
+                  <div class="circle-chart">
+                    <svg class="circle-outer" viewBox="0 0 32 32" class="">
+                      <circle
+                        r="16"
+                        cx="16"
+                        cy="16"
+                        stroke-dasharray="97 100"
+                        stroke="#129590"
+                        fill="#fff"
+                        stroke-width="5"
+                      ></circle>
+                    </svg>
+
+                    <svg viewBox="0 0 32 32" class="circle-inner">
+                      <circle
+                        r="16"
+                        cx="16"
+                        cy="16"
+                        stroke="#f82530"
+                        stroke-dasharray="87 100"
+                        fill="#fff"
+                        stroke-width="5"
+                      ></circle>
+                    </svg>
+                  </div>
                 </div>
                 <p class="mt-8 text-xs lg:w-9/12">
                   Choose a <strong> hand-picked solution</strong> for your
@@ -68,15 +96,22 @@
                   <div class="flex flex-col items-start space-y-1">
                     <div class="text-red">
                       <p class="text-xs">before</p>
-                      <p class="text-xl lg:text-2xl font-bold">50%</p>
+                      <p class="text-xl lg:text-2xl font-bold">
+                        <span id="number-3">50</span>%
+                      </p>
                     </div>
                     <div class="text-green">
                       <p class="text-xs">after</p>
-                      <p class="text-xl lg:text-2xl font-bold">70%</p>
+                      <p class="text-xl lg:text-2xl font-bold">
+                        <span id="number-4">70</span>%
+                      </p>
                     </div>
                   </div>
 
-                  <img src="/images/index-chart.svg" alt="" />
+                  <div class="lines-chart">
+                    <div class="bg-red w-4 line line--red"></div>
+                    <div class="bg-green w-4 line line--green"></div>
+                  </div>
                 </div>
                 <p class="mt-8 text-xs lg:w-9/12">
                   Choose a <strong> hand-picked solution</strong> for your
