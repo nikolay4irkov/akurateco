@@ -59,17 +59,18 @@ strong {
   }
 }
 
-.shadow-1 {
-  box-shadow: 0px 56px 54px -21px rgba(229, 229, 229, 0.5);
+.shadow-custom {
+  @screen lg {
+    @apply transition-shadow duration-300;
+
+    &:hover {
+      box-shadow: 0px 56px 54px -21px rgba(229, 229, 229, 0.5);
+    }
+  }
 }
 
-.box-shadow-red {
-  box-shadow: 0px 80px 80px rgba(248, 37, 48, 0.11),
-    0px 33.4221px 33.4221px rgba(248, 37, 48, 0.079074),
-    0px 17.869px 17.869px rgba(248, 37, 48, 0.0655718),
-    0px 10.0172px 10.0172px rgba(248, 37, 48, 0.055),
-    0px 5.32008px 5.32008px rgba(248, 37, 48, 0.0444282),
-    0px 2.21381px 2.21381px rgba(248, 37, 48, 0.030926);
+.shadow-1 {
+  box-shadow: 0px 56px 54px -21px rgba(229, 229, 229, 0.5);
 }
 
 .drop-shadow-red {
