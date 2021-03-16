@@ -9,3 +9,4 @@ import "./animations-index";
 // import "./header-visibility";
 import "./burger";
 import "./mob-submenu-toggler";
+import "./inview-check";

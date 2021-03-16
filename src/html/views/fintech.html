@@ -41,16 +41,16 @@
           >
             <img
               src="/images/fintech-connections.png"
-              class="object-cover w-full mb-10 lg:mb-0 lg:w-1/2 drop-shadow-grey-1"
+              class="object-cover w-full mb-10 lg:mb-0 lg:w-1/2 drop-shadow-grey-1 js-visible"
             />
 
             <div class="lg:w-2/5">
-              <h2 class="text-2xl lg:text-5xl font-bold capitalize">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize js-visible">
                 What we offer:
               </h2>
 
               <div class="space-y-6 mt-12">
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4 js-visible">
                   <img src="/images/arr-right-red.svg" />
                   <div class="text-lg">
                     <p class="font-bold capitalize">100+ connectors.</p>
@@ -60,7 +60,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4 js-visible">
                   <img src="/images/arr-right-red.svg" />
                   <div class="text-lg">
                     <p class="font-bold capitalize">
@@ -72,7 +72,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4 js-visible">
                   <img src="/images/arr-right-red.svg" />
                   <div class="text-lg">
                     <p class="font-bold capitalize">
@@ -93,11 +93,11 @@
       <section class="bg-lightGreen py-22">
         <div class="container">
           <div class="text-center lg:w-8/12 mx-auto">
-            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4 js-visible">
               Akurateco offers dedicated support to FinTech startups from day
               one.
             </h2>
-            <p class="text-lg font-medium">
+            <p class="text-lg font-medium js-visible">
               We guarantee fast integration with the system, new connectors
               added within a week upon request, and a secure payment environment
               thanks to our powerful technology and 15+ years of hands-on
@@ -110,12 +110,12 @@
       <section class="section-lines pt-22 lg:pt-30">
         <div class="container">
           <div class="lg:w-2/3 lg:mx-auto">
-            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4 js-visible">
               Why Akurateco?
             </h2>
 
             <div class="space-y-6 mt-12">
-              <div class="flex items-center space-x-4">
+              <div class="flex items-center space-x-4 js-visible">
                 <img src="/images/arr-right-red.svg" />
                 <div class="text-lg">
                   <p class="font-bold capitalize">Flexibility.</p>
@@ -126,7 +126,7 @@
                   </p>
                 </div>
               </div>
-              <div class="flex items-center space-x-4">
+              <div class="flex items-center space-x-4 js-visible">
                 <img src="/images/arr-right-red.svg" />
                 <div class="text-lg">
                   <p class="font-bold capitalize">Competitive rates.</p>
@@ -136,7 +136,7 @@
                   </p>
                 </div>
               </div>
-              <div class="flex items-center space-x-4">
+              <div class="flex items-center space-x-4 js-visible">
                 <img src="/images/arr-right-red.svg" />
                 <div class="text-lg">
                   <p class="font-bold capitalize">Security.</p>
@@ -154,13 +154,13 @@
       <section class="section-lines py-22 lg:pt-44 lg:pb-28">
         <div class="container">
           <h2
-            class="text-2xl lg:text-5xl font-bold capitalize text-center mb-12"
+            class="text-2xl lg:text-5xl font-bold capitalize text-center mb-12 js-visible"
           >
             Our products
           </h2>
 
           <div
-            class="grid grid-cols-1 justify-items-center lg:grid-cols-3 gap-6 lg:gap-12"
+            class="grid grid-cols-1 justify-items-center lg:grid-cols-3 gap-6 lg:gap-12 js-visible"
           >
             <a
               href="white-label.html"
@@ -188,7 +188,7 @@
       </section>
 
       <section class="bg-lightGreen py-22">
-        <div class="container">
+        <div class="container js-visible">
           <div class="text-center lg:w-8/12 mx-auto">
             <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-12">
               Request a Free Demo of The System Today!
@@ -208,5 +208,7 @@
     <%= require('./../includes/modals.html').default %> <%=
     require('./../includes/footer.html').default %> <%=
     require('./../includes/defs.html').default %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js"></script>
   </body>
 </html>

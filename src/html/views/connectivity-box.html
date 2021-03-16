@@ -37,7 +37,7 @@
       </section>
 
       <section class="bg-lightGrey py-22">
-        <div class="container">
+        <div class="container js-visible">
           <img
             src="/images/connectivity-box-connections.png"
             class="drop-shadow-grey-1"
@@ -51,10 +51,10 @@
             class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
           >
             <div class="lg:w-2/5 mb-12 lg:mb-0">
-              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4 js-visible">
                 Stay in control of your payment data
               </h2>
-              <p class="text-lg font-medium mb-12">
+              <p class="text-lg font-medium mb-12 js-visible">
                 Monitor and store all data inside a single consolidated system
                 to make data-driven business decisions and remain one step ahead
                 of your competition.
@@ -64,7 +64,7 @@
 
             <img
               src="/images/connectivity-box-charts.png"
-              class="object-cover w-full lg:w-48/100 drop-shadow-grey-2"
+              class="object-cover w-full lg:w-48/100 drop-shadow-grey-2 js-visible"
             />
           </div>
         </div>
@@ -76,15 +76,15 @@
             class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
           >
             <div class="lg:w-2/5 mb-12 lg:mb-0">
-              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4 js-visible">
                 Enjoy fast connectivity with data aPI/sDK’s
               </h2>
               <img
                 src="/images/connectivity-box-api.svg"
-                class="lg:hidden object-cover w-72 mx-auto mb-4"
+                class="lg:hidden object-cover w-72 mx-auto mb-4 js-visible"
               />
 
-              <p class="text-lg font-medium">
+              <p class="text-lg font-medium js-visible">
                 Benefit from fast and smooth connectivity of our open-source
                 developers’ environment to any payment app, market, payment
                 method, merchant, etc.
@@ -93,7 +93,7 @@
 
             <img
               src="/images/connectivity-box-api.svg"
-              class="hidden lg:block object-cover w-4/12 ml-22 pt-10"
+              class="hidden lg:block object-cover w-4/12 ml-22 pt-10 js-visible"
             />
           </div>
         </div>
@@ -102,10 +102,10 @@
       <section class="bg-lightGreen py-22">
         <div class="container">
           <div class="text-center lg:w-8/12 mx-auto">
-            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4 js-visible">
               enhance your data with the latest technology
             </h2>
-            <p class="text-lg font-medium">
+            <p class="text-lg font-medium js-visible">
               Enjoy Akurateco’s own data aggregation tools developed by our
               in-house Data Scientists and Analysts to further improve the
               quality and value of your data.
@@ -120,10 +120,10 @@
             class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
           >
             <div class="lg:w-2/5 mb-12 lg:mb-0">
-              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4 js-visible">
                 always play it safe
               </h2>
-              <p class="text-lg font-medium">
+              <p class="text-lg font-medium js-visible">
                 Akurateco’s connectivity box complies with the industry’s top
                 security standards to protect merchants, agents, and customers
                 from tech-savvy fraudsters.
@@ -132,14 +132,14 @@
 
             <img
               src="/images/connectivity-box-security.svg"
-              class="object-cover w-full lg:w-48/100"
+              class="object-cover w-full lg:w-48/100 js-visible"
             />
           </div>
         </div>
       </section>
 
       <section class="bg-lightGreen py-22">
-        <div class="container">
+        <div class="container js-visible">
           <div class="text-center lg:w-8/12 mx-auto">
             <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
               Let’s talk cashier? Request a free demo today!
@@ -165,5 +165,7 @@
     <%= require('./../includes/modals.html').default %> <%=
     require('./../includes/footer.html').default %> <%=
     require('./../includes/defs.html').default %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js"></script>
   </body>
 </html>

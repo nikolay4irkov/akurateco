@@ -5,15 +5,13 @@ html {
 }
 
 body {
-  @apply overflow-x-hidden bg-whitish;
+  @apply  bg-whitish;
 
-  &.is-static {
-    // @apply overflow-hidden;
-  }
+  
 }
 
 main {
-  @apply overflow-x-hidden mt-8;
+  @apply  mt-8;
 
   @screen lg {
     @apply mt-0;
@@ -102,5 +100,16 @@ strong {
 
   @screen xl {
     margin-left: calc(50% - 600px);
+  }
+}
+
+.js-visible {
+  @screen lg {
+    transition: all 0.8s ease-in-out;
+
+    &:not(.is-visible) {
+      transform: translateY(120px);
+      opacity: 0;
+    }
   }
 }

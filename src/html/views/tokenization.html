@@ -39,10 +39,10 @@
             class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
           >
             <div class="lg:w-2/5 mb-12 lg:mb-0">
-              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4 js-visible">
                 enjoy one-click payments
               </h2>
-              <p class="text-lg font-medium">
+              <p class="text-lg font-medium js-visible">
                 Let your customers implement one-click payments on their sites
                 to capture more revenue and skyrocket sales volumes.
               </p>
@@ -50,12 +50,12 @@
 
             <img
               src="/images/tokenization-payments-mob.png"
-              class="lg:hidden object-cover w-full rounded-2xl shadow-1"
+              class="lg:hidden object-cover w-full rounded-2xl shadow-1 js-visible"
             />
 
             <img
               src="/images/tokenization-payments.png"
-              class="hidden lg:block object-cover w-48/100 rounded-2xl shadow-1"
+              class="hidden lg:block object-cover w-48/100 rounded-2xl shadow-1 js-visible"
             />
           </div>
         </div>
@@ -67,10 +67,10 @@
             class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
           >
             <div class="lg:w-2/5 mb-12 lg:mb-0">
-              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4 js-visible">
                 implement smart recurring billing
               </h2>
-              <p class="text-lg font-medium">
+              <p class="text-lg font-medium js-visible">
                 Take advantage of tokenization for state-of-the-art recurring
                 billing with multiple retries and a flexible payment schedule.
               </p>
@@ -78,7 +78,7 @@
 
             <img
               src="/images/tokenization-calendar.svg"
-              class="object-cover w-full lg:w-2/5 rounded-xl shadow-1"
+              class="object-cover w-full lg:w-2/5 rounded-xl shadow-1 js-visible"
             />
           </div>
         </div>
@@ -87,10 +87,10 @@
       <section class="bg-lightGrey py-22 lg:py-28">
         <div class="container">
           <div class="text-center lg:w-10/12 mx-auto">
-            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+            <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4 js-visible">
               easily customize recurring billing fees
             </h2>
-            <p class="text-lg font-medium">
+            <p class="text-lg font-medium js-visible">
               Enjoy fully customizable recurring billing with our
               top-of-the-industry fee constructor and let your customers benefit
               from the maximum flexibility it offers.
@@ -105,10 +105,10 @@
             class="flex flex-col lg:flex-row lg:items-center lg:justify-between"
           >
             <div class="lg:w-2/5 mb-12 lg:mb-0">
-              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4 js-visible">
                 roll in mobile wallets and cryptocurrency
               </h2>
-              <p class="text-lg font-medium">
+              <p class="text-lg font-medium js-visible">
                 Leverage tokenization for propelling technologies like mobile
                 wallets and cryptocurrency allowing your clients to pay the way
                 they’re used to.
@@ -117,7 +117,7 @@
 
             <img
               src="/images/tokenization-phones.png"
-              class="object-cover w-11/12 mx-auto lg:mx-0 lg:w-2/6 lg:mr-18 drop-shadow-grey-2"
+              class="object-cover w-11/12 mx-auto lg:mx-0 lg:w-2/6 lg:mr-18 drop-shadow-grey-2 js-visible"
             />
           </div>
         </div>
@@ -129,10 +129,10 @@
             class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between"
           >
             <div class="lg:w-2/5 mb-12 lg:mb-0">
-              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
+              <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4 js-visible">
                 utilize pCI dSS compatible tokenization
               </h2>
-              <p class="text-lg font-medium">
+              <p class="text-lg font-medium js-visible">
                 With Akurateco, you get tokenization fully compatible with PCI
                 DSS security standards, ensuring that your customers’ data is
                 safely locked down.
@@ -141,14 +141,14 @@
 
             <img
               src="/images/tokenization-pci.svg"
-              class="object-cover w-full lg:w-48/100 drop-shadow-grey-2"
+              class="object-cover w-full lg:w-48/100 drop-shadow-grey-2 js-visible"
             />
           </div>
         </div>
       </section>
 
       <section class="bg-lightGreen py-22">
-        <div class="container">
+        <div class="container js-visible">
           <div class="text-center lg:w-8/12 mx-auto">
             <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-4">
               how about we make it official?
@@ -173,5 +173,7 @@
     <%= require('./../includes/modals.html').default %> <%=
     require('./../includes/footer.html').default %> <%=
     require('./../includes/defs.html').default %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <body>
+  <body class="index">
     <%= require('./../includes/header.html').default %>
 
     <main>
@@ -148,10 +148,10 @@
       <section class="section-lines py-22 lg:py-24">
         <div class="container">
           <div class="text-center mx-auto lg:w-9/12">
-            <h2 class="text-2xl lg:text-5xl font-bold mb-4">
+            <h2 class="text-2xl lg:text-5xl font-bold mb-4 js-visible">
               Keep All Data In One Place
             </h2>
-            <p class="text-lg font-medium mb-12 lg:mb-22">
+            <p class="text-lg font-medium mb-12 lg:mb-22 js-visible">
               Consolidated and easy-to-manipulate data management to keep you in
               full control over data from various payment channels.
             </p>
@@ -159,7 +159,7 @@
 
           <img
             src="/images/cashier-charts.png"
-            class="w-full drop-shadow-grey-2"
+            class="w-full drop-shadow-grey-2 js-visible"
           />
         </div>
       </section>
@@ -178,10 +178,10 @@
             class="flex flex-col lg:flex-row-reverse lg:justify-between lg:items-center relative"
           >
             <div class="lg:w-5/12 mb-12 lg:mb-0">
-              <h2 class="text-2xl lg:text-5xl font-bold mb-8">
+              <h2 class="text-2xl lg:text-5xl font-bold mb-8 js-visible">
                 Customize Your Payment Processing Model
               </h2>
-              <p class="text-lg">
+              <p class="text-lg js-visible">
                 Choose a <strong> hand-picked solution</strong> for your
                 business model <strong>to grow your conversion rate</strong> and
                 <strong>improve customer experience.</strong>
@@ -189,7 +189,7 @@
             </div>
 
             <div
-              class="grid grid-cols-1 place-items-center lg:place-items-auto lg:grid-cols-2 gap-6 lg:gap-12"
+              class="grid grid-cols-1 place-items-center lg:place-items-auto lg:grid-cols-2 gap-6 lg:gap-12 js-visible"
             >
               <a
                 href="white-label.html"
@@ -227,16 +227,16 @@
       <section class="section-lines py-22 lg:py-24">
         <div class="container">
           <div class="text-center mx-auto lg:w-9/12 mb-22">
-            <h2 class="text-2xl lg:text-5xl font-bold mb-4">
+            <h2 class="text-2xl lg:text-5xl font-bold mb-4 js-visible">
               Personalize Your Customers’ Checkout Experience
             </h2>
-            <p class="text-lg font-medium">
+            <p class="text-lg font-medium js-visible">
               Allow your customers to use their preferred checkout to optimize
               their shopping experience and scale it up to their expectations.
             </p>
           </div>
 
-          <div class="swiper-container--index-2 h-104">
+          <div class="swiper-container--index-2 h-104 js-visible">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="/images/payment-1.png" class="h-full shadow-1" />
@@ -259,7 +259,7 @@
       </section>
 
       <section class="bg-lightGreen py-22">
-        <div class="container">
+        <div class="container js-visible">
           <div class="text-center lg:w-8/12 mx-auto">
             <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-12">
               Request a Free Demo of The System Today!
@@ -278,16 +278,16 @@
       <section class="section-lines py-22 lg:py-24">
         <div class="container">
           <div class="text-center mx-auto lg:w-10/12 mb-12 lg:mb-22">
-            <h2 class="text-2xl lg:text-5xl font-bold mb-4">
+            <h2 class="text-2xl lg:text-5xl font-bold mb-4 js-visible">
               Enjoy An Optimized Payment Solution
             </h2>
-            <p class="text-lg font-medium">
+            <p class="text-lg font-medium js-visible">
               Increase your transaction approval rate, prevent fraud, and be in
               control of the payment flow with our cutting-edge solutions.
             </p>
           </div>
 
-          <div class="swiper-container--index-3">
+          <div class="swiper-container--index-3 js-visible">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a
@@ -361,16 +361,18 @@
         />
         <div class="container relative">
           <div class="text-center mx-auto w-10/12 mb-12 lg:mb-22">
-            <h2 class="text-2xl lg:text-5xl font-bold mb-2 capitalize">
+            <h2
+              class="text-2xl lg:text-5xl font-bold mb-2 capitalize js-visible"
+            >
               cater to international customers across various industries
             </h2>
-            <p class="text-lg font-medium lg:w-8/12 mx-auto">
+            <p class="text-lg font-medium lg:w-8/12 mx-auto js-visible">
               Expand your global presence by offering advanced functionalities
               tailored to the needs of a specific market.
             </p>
           </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 js-visible">
             <a
               href="#"
               class="bg-white rounded-lg shadow-custom p-6 flex flex-col min-h-64 mx-10 lg:mx-0"
@@ -421,11 +423,13 @@
 
       <section class="section-lines py-22 lg:py-24">
         <div class="container">
-          <h2 class="text-2xl lg:text-5xl font-bold text-center mb-12 lg:mb-22">
+          <h2
+            class="text-2xl lg:text-5xl font-bold text-center mb-12 lg:mb-22 js-visible"
+          >
             Blog
           </h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 js-visible">
             <a href="blog.html" class="card-blog group">
               <div class="overflow-hidden h-52 lg:h-60 mb-6">
                 <img
@@ -485,7 +489,7 @@
       </section>
 
       <section class="bg-lightGreen py-22">
-        <div class="container">
+        <div class="container js-visible">
           <div class="text-center lg:w-8/12 mx-auto">
             <h2 class="text-2xl lg:text-5xl font-bold capitalize mb-12">
               Request a Free Demo of The System Today!
