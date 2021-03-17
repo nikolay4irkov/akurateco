@@ -1,4 +1,26 @@
 .text-container {
+  > * + * {
+    @apply mt-4;
+  }
+
+  .text {
+    @apply text-lg font-medium;
+  }
+
+  .text-large {
+    @apply text-xl font-medium;
+  }
+
+  .text-xlarge {
+    @apply text-2xl font-medium capitalize;
+  }
+
+  strong {
+    @apply font-bold;
+  }
+}
+
+.text-container-article {
   p {
     @apply text-lg font-medium my-8;
   }

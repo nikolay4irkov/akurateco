@@ -183,3 +183,22 @@ const aboutServices = new Swiper(".swiper-container--about-services", {
   // kickstart
   breakpointChecker();
 })(); /* IIFE end */
+
+const indexHero = new Swiper(".swiper-container--index-hero", {
+  speed: 1000,
+  slidesPerView: 1,
+  effect: "fade",
+  // autoHeight: true,
+
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+
+  breakpoints: {
+    1200: {
+      // autoHeight: false,
+    },
+  },
+});
