@@ -4,6 +4,12 @@
     <%= require('./../includes/header.html').default %>
 
     <main>
+      <img
+        id="plane-down"
+        src="/images/akurateco-logo-small.svg"
+        class="plane plane--down right-0"
+      />
+
       <section
         id="hero"
         class="lg:h-screen section-lines lg:flex lg:items-center pt-28 lg:pt-0"
@@ -274,13 +280,12 @@
           </div>
         </div>
       </section>
+      <img
+        id="plane-up"
+        src="/images/akurateco-logo-small.svg"
+        class="plane plane--up left-0 transform -translate-x-1/2"
+      />
     </main>
-
-    <img
-      id="plane-up"
-      src="/images/akurateco-logo-small.svg"
-      class="hidden lg:block absolute left-0 transform -translate-x-1/2 w-80 h-60 mr-4"
-    />
 
     <%= require('./../includes/modals.html').default %> <%=
     require('./../includes/footer.html').default %> <%=
