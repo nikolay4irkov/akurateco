@@ -1,30 +1,39 @@
 gsap.registerPlugin(ScrollTrigger);
-const $offset = 0;
 
-const $pageHeight = $(document).height();
+ScrollTrigger.matchMedia({
+  "(min-width: 1180px)": function () {
+    const $pageHeight = $(document).height();
 
-console.log($pageHeight);
-const $pageHeightIncreased = $pageHeight + $offset;
+    var tl1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#hero",
+        start: "top top",
+        end: () => "+=" + $pageHeight * 0.7,
+        // markers: true,
+        scrub: 2,
+      },
+    });
 
-gsap.to("#plane-up", {
-  scrollTrigger: {
-    trigger: "#hero",
-    start: "top top",
-    end: "+=3500",
-    ease: "circ.out",
-    scrub: 1,
+    tl1.to("#plane-up", {
+      y: -$pageHeight,
+    });
+
+    var tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#hero",
+        start: "top top",
+        end: () => "+=" + $pageHeight * 0.7,
+        // markers: true,
+        scrub: 2,
+      },
+    });
+
+    tl2
+      .to("#plane-down", {
+        y: $pageHeight,
+      })
+      .to("#plane-down", {
+        opacity: 0,
+      });
   },
-  y: -$pageHeight,
-});
-
-gsap.to("#plane-down", {
-  scrollTrigger: {
-    trigger: "#hero",
-    start: "top top",
-    end: "+=3500",
-    ease: "circ.out",
-    scrub: 1,
-    // markers: true,
-  },
-  y: $pageHeightIncreased,
 });
