@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <%= require('./../includes/header.html').default %>
+
+    <main>
+      <section id="hero" class="section-lines pt-36 lg:pt-56 pb-40 lg:pb-48">
+        <div class="container">
+          <h1 class="text-5xl lg:text-7xl font-black text-center">
+            Contact Us
+          </h1>
+
+          <div
+            class="bg-white rounded-2xl mt-40 lg:mt-35 lg:w-2/3 lg:mx-auto shadow-1"
+          >
+            <div class="flex items-center">
+              <button
+                class="js-tab-heading tab-heading text-green bg-lightGreen"
+                data-tab-anchor="tab-demo"
+                data-classes="{'active': 'text-green bg-lightGreen', 'unactive':'bg-white text-mediumGrey'}"
+              >
+                Request a Demo
+              </button>
+              <button
+                class="js-tab-heading tab-heading bg-white text-mediumGrey"
+                data-tab-anchor="tab-connector"
+                data-classes="{'active': 'text-green bg-lightGreen', 'unactive':'bg-white text-mediumGrey'}"
+              >
+                Request a Connector
+              </button>
+            </div>
+            <div class="p-6 pb-12 lg:p-16">
+              <div
+                class="block"
+                data-classes="{'active': 'block', 'unactive':'hidden'}"
+                data-tab-key="tab-demo"
+              >
+                <form
+                  action=""
+                  class="js-form"
+                  data-success-modal="modal-thanks"
+                >
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-y-2 lg:gap-y-4 lg:gap-x-10"
+                  >
+                    <div class="form__item">
+                      <label
+                        for="name-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Name*</label
+                      >
+                      <input
+                        id="name-demo"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="phone-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Phone*</label
+                      >
+                      <input
+                        id="phone-demo"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="email-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Email*</label
+                      >
+                      <input
+                        id="email-demo"
+                        type="email"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="company-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Company*</label
+                      >
+                      <input
+                        id="company-demo"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="website-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Website*</label
+                      >
+                      <input
+                        id="website-demo"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="geo-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Geo of customers*</label
+                      >
+                      <input
+                        id="geo-demo"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item lg:col-span-2">
+                      <label
+                        for="connectors-demo"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Connectors needed</label
+                      >
+                      <input
+                        id="connectors-demo"
+                        type="text"
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="button button-red min-w-50 mx-auto mt-6 lg:mt-15"
+                  >
+                    Request a Demo
+                  </button>
+                </form>
+              </div>
+              <div
+                class="hidden"
+                data-classes="{'active': 'block', 'unactive':'hidden'}"
+                data-tab-key="tab-connector"
+              >
+                <form
+                  action=""
+                  class="js-form"
+                  data-success-modal="modal-thanks"
+                >
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-y-2 lg:gap-y-4 lg:gap-x-10"
+                  >
+                    <div class="form__item">
+                      <label
+                        for="name-connector"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Name*</label
+                      >
+                      <input
+                        id="name-connector"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="phone-connector"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Phone*</label
+                      >
+                      <input
+                        id="phone-connector"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="email-connector"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Email*</label
+                      >
+                      <input
+                        id="email-connector"
+                        type="email"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item">
+                      <label
+                        for="company-connector"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Company*</label
+                      >
+                      <input
+                        id="company-connector"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item lg:col-span-2">
+                      <label
+                        for="website-connector"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >Connector's Website*</label
+                      >
+                      <input
+                        id="website-connector"
+                        type="text"
+                        required
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                    <div class="form__item lg:col-span-2">
+                      <label
+                        for="payment-methods-connector"
+                        class="text-xs font-medium text-dark text-opacity-50"
+                        >List of payment methods to be integrated for this
+                        connector</label
+                      >
+                      <input
+                        id="payment-methods-connector"
+                        type="text"
+                        class="w-full rounded-none border-b border-lightGreen focus:outline-none"
+                      />
+                    </div>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="button button-green min-w-50 mx-auto mt-6 lg:mt-15"
+                  >
+                    Request a Connector
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%= require('./../includes/modals.html').default %> <%=
+    require('./../includes/footer.html').default %> <%=
+    require('./../includes/defs.html').default %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js"></script>
+  </body>
+</html>

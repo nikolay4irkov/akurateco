@@ -1,0 +1,11 @@
+.tab-heading {
+  @apply w-1/2 h-14 flex items-center text-sm  font-bold justify-center rounded-t-2xl transition-colors duration-300;
+
+  @screen lg {
+    @apply text-lg;
+
+    &:hover {
+      @apply text-green bg-lightGreen;
+    }
+  }
+}
