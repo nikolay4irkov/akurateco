@@ -54,3 +54,20 @@
     @apply w-2/3 p-16 max-w-4xl;
   }
 }
+
+.modal--cookie {
+  @apply bg-white  bottom-0 w-full py-10 px-6 pb-8 rounded-t-lg fixed z-50 opacity-0 pointer-events-none transition-opacity duration-300;
+
+  &.is-open {
+    @apply pointer-events-auto;
+    opacity: 1 !important;
+  }
+
+  .button {
+    width: 100% !important;
+
+    @screen md {
+      width: max-content !important;
+    }
+  }
+}

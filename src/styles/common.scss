@@ -5,13 +5,11 @@ html {
 }
 
 body {
-  @apply  bg-whitish;
-
-  
+  @apply bg-whitish;
 }
 
 main {
-  @apply  mt-8;
+  @apply mt-8;
 
   @screen lg {
     @apply mt-0;
@@ -111,5 +109,15 @@ strong {
       transform: translateY(120px);
       opacity: 0;
     }
+  }
+}
+
+.title-404 {
+  @apply text-red font-bold;
+  font-size: 144px;
+  line-height: 120%;
+
+  @screen lg {
+    font-size: 168px;
   }
 }
