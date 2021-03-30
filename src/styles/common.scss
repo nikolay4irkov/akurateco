@@ -121,3 +121,15 @@ strong {
     font-size: 168px;
   }
 }
+
+.page-pagination {
+  @apply flex justify-center mt-12  text-green font-medium text-lg;
+
+  @screen lg {
+    @apply mt-20;
+  }
+
+  > * + * {
+    @apply ml-6;
+  }
+}

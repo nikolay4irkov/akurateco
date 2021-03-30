@@ -16,6 +16,7 @@ module.exports = {
       inset: {
         "1/2": "50%",
         full: "100%",
+        24: "6rem",
       },
       spacing: {
         7: "1.75rem",
