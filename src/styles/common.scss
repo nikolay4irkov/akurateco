@@ -60,7 +60,8 @@ strong {
     @apply transition-shadow duration-300;
 
     &:hover {
-      box-shadow: 0px 56px 54px -21px rgba(229, 229, 229, 0.5);
+      // box-shadow: 0px 56px 54px -21px rgba(229, 229, 229, 0.5);
+      box-shadow: 0px 56px 54px -21px rgba(229, 229, 229, 0.7);
     }
   }
 }
@@ -106,7 +107,7 @@ strong {
     transition: all 0.8s ease-in-out;
 
     &:not(.is-visible) {
-      transform: translateY(120px);
+      transform: translateY(80px);
       opacity: 0;
     }
   }
@@ -131,5 +132,31 @@ strong {
 
   > * + * {
     @apply ml-6;
+  }
+}
+
+section {
+  // @apply border-t border-b border-red;
+
+  @apply overflow-x-hidden;
+}
+
+#animation_container {
+  @media (max-width: 768px) {
+    @apply relative;
+
+    width: 100% !important;
+    height: 150px !important;
+
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+}
+
+.section-custom-height {
+  @screen lg {
+    min-height: 85vh;
   }
 }
