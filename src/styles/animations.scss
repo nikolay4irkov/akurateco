@@ -75,11 +75,14 @@
 }
 
 .plane {
-  // @apply hidden absolute w-40 h-30;
-  @apply hidden absolute w-32 h-24;
+  @apply hidden absolute w-16;
 
   @screen lg {
     @apply block;
+
+    &.hidden {
+      @apply hidden;
+    }
   }
 }
 
