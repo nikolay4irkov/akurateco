@@ -42,7 +42,8 @@
     @apply text-sm font-medium px-2 py-1 rounded-lg cursor-pointer;
 
     &:hover,
-    &.active-link {
+    &.active-link,
+    &.active {
       @apply bg-lightGreen;
     }
   }
@@ -52,7 +53,8 @@
   @apply relative;
 
   &-content {
-    @apply fixed left-1/2 transform -translate-x-1/2 hidden;
+    // @apply fixed left-1/2 transform -translate-x-1/2 hidden;
+    @apply fixed left-1/2 transform -translate-x-1/2;
 
     box-shadow: 0px 56px 54px -21px rgba(229, 229, 229, 0.5);
     padding-top: 25px;
@@ -65,7 +67,16 @@
 
   &:hover {
     .nav__link {
-      @apply bg-lightGreen;
+      // @apply bg-lightGreen;
+    }
+  }
+
+  @screen lg {
+    &.active,
+    &.hovered {
+      .nav__link {
+        @apply bg-lightGreen;
+      }
     }
   }
 }
@@ -107,7 +118,11 @@
   @apply hidden p-8 mt-6 bg-lightGreen w-full;
 
   a {
-    @apply text-lg font-medium block;
+    @apply text-lg font-medium block px-2 py-1 rounded-lg bg-transparent w-max-content;
+
+    &.active-link {
+      @apply bg-white;
+    }
   }
 }
 
@@ -127,7 +142,7 @@
     @apply p-8 transition-colors duration-300;
 
     &:hover {
-      // @apply bg-lightGreen;
+      @apply bg-lightGreen;
     }
   }
 }

@@ -160,3 +160,11 @@ section {
     min-height: 85vh;
   }
 }
+
+.text-page {
+  @apply py-24;
+
+  @screen lg {
+    @apply py-40;
+  }
+}

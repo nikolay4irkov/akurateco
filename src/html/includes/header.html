@@ -5,12 +5,12 @@
     </a>
 
     <nav class="space-x-1 nav">
-      <div data-target="1" class="nav__dropdown js-nav-btn">
+      <div id="10" data-target="1" class="nav__dropdown js-nav-btn">
         <p class="nav__link">Products</p>
 
         <div class="nav__dropdown-content hidden js-nav-content">
           <div class="dropdown-content__wrapper">
-            <div id="1" class="space-y-2 js-nav-col">
+            <div data-target="10" id="1" class="space-y-2 js-nav-col">
               <a href="white-label.html" class="dropdown-link">White-Label</a>
               <a href="cashier.html" class="dropdown-link">Cashier</a>
               <a href="mobile-sdk.html" class="dropdown-link"
@@ -20,7 +20,7 @@
                 >Connectivity box</a
               >
             </div>
-            <div id="2" class="space-y-2 js-nav-col">
+            <div data-target="20" id="2" class="space-y-2 js-nav-col">
               <a href="billing.html" class="dropdown-link"
                 >Billing And Smart Invoicing</a
               >
@@ -37,102 +37,24 @@
                 >Tokenization And Recurring Billing</a
               >
             </div>
-            <div id="3" class="space-y-2 js-nav-col">
+            <div data-target="30" id="3" class="space-y-2 js-nav-col">
               <a href="ipsp.html" class="dropdown-link">PSPs</a>
               <a href="e-commerce.html" class="dropdown-link"
                 >E-commerce / Low Risk</a
               >
-              <a href="high-risk.html" class="dropdown-link">High Risk</a>
+              <a href="high-risk.html" class="dropdown-link active-link"
+                >High Risk</a
+              >
               <a href="fintech.html" class="dropdown-link">Fintech</a>
             </div>
           </div>
         </div>
       </div>
-      <div data-target="2" class="nav__dropdown js-nav-btn">
+      <div id="20" data-target="2" class="nav__dropdown js-nav-btn">
         <p class="nav__link">Features</p>
-
-        <!-- <div class="nav__dropdown-content">
-          <div class="dropdown-content__wrapper">
-            <div class="space-y-2">
-              <a href="white-label.html" class="dropdown-link">White-Label</a>
-              <a href="cashier.html" class="dropdown-link">Cashier</a>
-              <a href="mobile-sdk.html" class="dropdown-link"
-                >Mobile Payments</a
-              >
-              <a href="connectivity-box.html" class="dropdown-link"
-                >Connectivity box</a
-              >
-            </div>
-            <div class="space-y-2 bg-lightGreen">
-              <a href="billing.html" class="dropdown-link"
-                >Billing And Smart Invoicing</a
-              >
-              <a href="admin-panel.html" class="dropdown-link"
-                >Back Office. Admin Panel</a
-              >
-              <a href="bill-faster.html" class="dropdown-link"
-                >Bill Faster And Save More</a
-              >
-              <a href="risk-management.html" class="dropdown-link"
-                >Risk Management</a
-              >
-              <a href="tokenization.html" class="dropdown-link"
-                >Tokenization And Recurring Billing</a
-              >
-            </div>
-            <div class="space-y-2">
-              <a href="ipsp.html" class="dropdown-link">PSPs</a>
-              <a href="e-commerce.html" class="dropdown-link"
-                >E-commerce / Low Risk</a
-              >
-              <a href="high-risk.html" class="dropdown-link">High Risk</a>
-              <a href="fintech.html" class="dropdown-link">Fintech</a>
-            </div>
-          </div>
-        </div> -->
       </div>
-      <div data-target="3" class="nav__dropdown js-nav-btn">
+      <div id="30" data-target="3" class="nav__dropdown active js-nav-btn">
         <p class="nav__link">For Business</p>
-
-        <!-- <div class="nav__dropdown-content">
-          <div class="dropdown-content__wrapper">
-            <div class="space-y-2">
-              <a href="white-label.html" class="dropdown-link">White-Label</a>
-              <a href="cashier.html" class="dropdown-link">Cashier</a>
-              <a href="mobile-sdk.html" class="dropdown-link"
-                >Mobile Payments</a
-              >
-              <a href="connectivity-box.html" class="dropdown-link"
-                >Connectivity box</a
-              >
-            </div>
-            <div class="space-y-2">
-              <a href="billing.html" class="dropdown-link"
-                >Billing And Smart Invoicing</a
-              >
-              <a href="admin-panel.html" class="dropdown-link"
-                >Back Office. Admin Panel</a
-              >
-              <a href="bill-faster.html" class="dropdown-link"
-                >Bill Faster And Save More</a
-              >
-              <a href="risk-management.html" class="dropdown-link"
-                >Risk Management</a
-              >
-              <a href="tokenization.html" class="dropdown-link"
-                >Tokenization And Recurring Billing</a
-              >
-            </div>
-            <div class="space-y-2 bg-lightGreen">
-              <a href="ipsp.html" class="dropdown-link">PSPs</a>
-              <a href="e-commerce.html" class="dropdown-link"
-                >E-commerce / Low Risk</a
-              >
-              <a href="high-risk.html" class="dropdown-link">High Risk</a>
-              <a href="fintech.html" class="dropdown-link">Fintech</a>
-            </div>
-          </div>
-        </div> -->
       </div>
 
       <a href="connectors.html" class="nav__link">Connectors</a>
@@ -174,7 +96,7 @@
   <div class="menu js-menu">
     <div class="container">
       <nav class="nav space-y-6">
-        <div class="submenu-wrapper">
+        <div class="submenu-wrapper js-submenu-wrapper active">
           <div class="submenu-toggler space-x-6 js-submenu-toggler">
             <div>
               <img src="/images/arr-down-white.svg" />
@@ -184,13 +106,13 @@
 
           <div class="submenu space-y-4 js-submenu">
             <a href="white-label.html">White-Label</a>
-            <a href="cashier.html">Cashier</a>
+            <a href="cashier.html" class="active-link">Cashier</a>
             <a href="mobile-sdk.html">Mobile Payments</a>
             <a href="connectivity-box.html">Connectivity box</a>
           </div>
         </div>
 
-        <div class="submenu-wrapper">
+        <div class="submenu-wrapper js-submenu-wrapper">
           <div class="submenu-toggler space-x-6 js-submenu-toggler">
             <div>
               <img src="/images/arr-down-white.svg" />
@@ -207,7 +129,7 @@
           </div>
         </div>
 
-        <div class="submenu-wrapper">
+        <div class="submenu-wrapper js-submenu-wrapper">
           <div class="submenu-toggler space-x-6 js-submenu-toggler">
             <div>
               <img src="/images/arr-down-white.svg" />

@@ -1,7 +1,7 @@
 $(function () {
   const agreed = localStorage.getItem("cookie");
 
-  console.log(agreed);
+  // console.log(agreed);
 
   if (agreed === null) {
     $(".modal--cookie").addClass("is-open");
