@@ -8,7 +8,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: "#hero",
         start: "top top",
-        end: () => "+=" + $pageHeight * 0.7,
+        end: () => "+=" + $pageHeight * 1,
         // markers: true,
         scrub: 2,
       },
