@@ -168,3 +168,19 @@ section {
     @apply py-40;
   }
 }
+
+.scroll-top-btn {
+  @apply fixed bottom-0 right-0 mr-4 mb-22 transition-opacity duration-300  z-20;
+
+  @screen lg {
+    @apply block mb-4;
+  }
+
+  svg {
+    @apply w-12 h-12;
+
+    @screen lg {
+      @apply w-24 h-24;
+    }
+  }
+}
