@@ -22,7 +22,7 @@
 
 .text-container-article {
   p {
-    @apply text-lg font-medium my-8;
+    @apply text-lg my-8;
   }
 
   h1 {
@@ -42,6 +42,24 @@
 
     @screen lg {
       @apply h-96;
+    }
+  }
+
+  a {
+    @apply underline;
+
+    color: #0062ff;
+  }
+
+  // ol {
+  //   @apply list-decimal list-inside;
+  // }
+
+  li {
+    @apply text-lg mt-4;
+
+    @screen lg {
+      @apply mt-6;
     }
   }
 

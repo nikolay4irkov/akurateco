@@ -35,3 +35,11 @@
     }
   }
 }
+
+.swiper-container--related-news {
+  @apply overflow-hidden;
+
+  @screen lg {
+    @apply overflow-auto;
+  }
+}
