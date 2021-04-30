@@ -79,19 +79,31 @@ strong {
     drop-shadow(0px 10.0172px 10.0172px rgba(248, 37, 48, 0.055))
     drop-shadow(0px 5.32008px 5.32008px rgba(248, 37, 48, 0.0444282))
     drop-shadow(0px 2.21381px 2.21381px rgba(248, 37, 48, 0.030926));
+
+  .is-safari & {
+    filter: none;
+  }
 }
 
-// .drop-shadow-grey-1 {
-//   filter: drop-shadow(0px 154px 126px rgba(0, 0, 0, 0.07))
-//     drop-shadow(0px 49.9794px 43.1694px rgba(0, 0, 0, 0.0453408))
-//     drop-shadow(0px 23.2406px 18.791px rgba(0, 0, 0, 0.0325632))
-//     drop-shadow(0px 11.5388px 8.14689px rgba(0, 0, 0, 0.0227847))
-//     drop-shadow(0px 5.3376px 2.96572px rgba(0, 0, 0, 0.0145288))
-//     drop-shadow(0px 1.87513px 0.629754px rgba(0, 0, 0, 0.0071287));
-// }
+.drop-shadow-grey-1 {
+  filter: drop-shadow(0px 154px 126px rgba(0, 0, 0, 0.07))
+    drop-shadow(0px 49.9794px 43.1694px rgba(0, 0, 0, 0.0453408))
+    drop-shadow(0px 23.2406px 18.791px rgba(0, 0, 0, 0.0325632))
+    drop-shadow(0px 11.5388px 8.14689px rgba(0, 0, 0, 0.0227847))
+    drop-shadow(0px 5.3376px 2.96572px rgba(0, 0, 0, 0.0145288))
+    drop-shadow(0px 1.87513px 0.629754px rgba(0, 0, 0, 0.0071287));
+
+  .is-safari & {
+    filter: none;
+  }
+}
 
 .drop-shadow-grey-2 {
-  // filter: drop-shadow(0px 56px 54px rgba(229, 229, 229, 0.5));
+  filter: drop-shadow(0px 56px 54px rgba(229, 229, 229, 0.5));
+
+  .is-safari & {
+    filter: none;
+  }
 }
 
 .ml-container {

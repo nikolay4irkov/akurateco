@@ -13,3 +13,4 @@ import "./tabs";
 import "./cookies";
 import "./dropdown";
 import "./mob-dropdown";
+import "./browser-detect";
