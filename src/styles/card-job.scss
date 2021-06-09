@@ -1,0 +1,31 @@
+.card-job {
+  @apply block bg-white p-6 rounded-2xl;
+}
+
+.card-job__title {
+  @apply text-xl font-bold text-green;
+}
+
+.card-job__description {
+  @apply text-lg font-medium mt-3;
+}
+
+.card-job__info {
+  @apply flex flex-col  mt-6;
+
+  @screen lg {
+    @apply flex-row;
+  }
+
+  p {
+    @apply font-medium uppercase;
+  }
+
+  > * + * {
+    @apply mt-4;
+
+    @screen lg {
+      @apply mt-0 ml-4;
+    }
+  }
+}

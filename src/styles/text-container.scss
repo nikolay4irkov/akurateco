@@ -71,3 +71,25 @@
     @apply mb-0;
   }
 }
+
+.text-container--job {
+  h3 {
+    @apply text-lg font-bold mt-8 mb-4 capitalize;
+  }
+
+  li, p {
+    @apply text-sm;
+  }
+
+  p {
+    @apply my-3;
+  }
+
+  & > :first-child {
+    @apply mt-0;
+  }
+
+  & > :last-child {
+    @apply mb-0;
+  }
+}
