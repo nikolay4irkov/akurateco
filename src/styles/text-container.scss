@@ -73,11 +73,58 @@
 }
 
 .text-container--job {
-  h3 {
-    @apply text-lg font-bold mt-8 mb-4 capitalize;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-bold capitalize;
   }
 
-  li, p {
+  h1 {
+    @apply text-2xl my-6;
+
+    @screen lg {
+      @apply text-5xl my-8;
+    }
+  }
+
+  h2 {
+    @apply text-xl my-5;
+
+    @screen lg {
+      @apply text-2xl my-7;
+    }
+  }
+
+  h3 {
+    @apply text-lg my-6;
+
+    @screen lg {
+      @apply text-xl my-6;
+    }
+  }
+
+  h4,
+  h5 {
+    @apply my-5;
+
+    @screen lg {
+      @apply text-lg my-5;
+    }
+  }
+
+  ol,
+  ul {
+    @apply list-inside my-5;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  li,
+  p {
     @apply text-sm;
   }
 
